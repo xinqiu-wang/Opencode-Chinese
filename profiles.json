@@ -1,0 +1,6048 @@
+[
+  {
+    "version": "2.2.5",
+    "versionOutput": "opencode v2.2.5",
+    "variant": "Windows x64",
+    "original": "0c346fdaf519d2f23a31d3b6cb9d65e369a72d77cac6f027b5e0a06376ec3a43",
+    "previous": {
+      "63ddc4a994007b0a27febbe70bdffa898871edca2743212086ed9105968637e4": 385,
+      "e97020d65e48dc4bad0a47d509b50487b680d58420b478472a3bafbc2c5c021e": 1401
+    },
+    "patched": "f80ea1d338a8a3e4ff6c8cd098e8ae0ae4962b5bfde9833927ec1abb2f0dfb83",
+    "helpMarker": "OpenCode 命令行界面",
+    "labels": 1642,
+    "modules": {
+      "chunk-5nv4x58q.js": [
+        {
+          "from": "jr(\"Accept exposing the server to the internet when --remote enables remote access for the first time (required without an interactive terminal)\"",
+          "to": "jr(\"同意 --remote 首次启用远程访问时将服务器公开到互联网（非交互终端必填）\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Pair through the OpenTunnel remote address, enabling remote access if needed (exposes the server to the internet)\"",
+          "to": "jr(\"通过 OpenTunnel 远程地址配对，必要时开启远程访问（服务器将对互联网开放）\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Print only one path: db, home, data, config, cache, state, tmp, bin, log, repos\"",
+          "to": "Nf(\"仅输出指定路径，可选 db、home、data、config、cache、state、tmp、bin、log、repos\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Uninstall OpenCode, keeping session data, configuration, and state\"",
+          "to": "description:\"卸载 OpenCode，保留会话数据、配置和状态\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Directory to write the snapshot into instead of the server's log directory\"",
+          "to": "jr(\"指定快照输出目录，默认使用服务器日志目录\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Write a heap snapshot of the running server and print its path\"",
+          "to": "description:\"为正在运行的服务器生成堆快照并输出路径\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Restore session history on resume and resize (disable with --no-replay)\"",
+          "to": "jr(\"恢复会话或调整窗口大小时重新显示会话历史（使用 --no-replay 关闭）\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"List top-level sessions in the current project, newest first\"",
+          "to": "description:\"列出当前项目的顶层会话，按最新排序\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Install a plugin and add it to the global configuration\"",
+          "to": "description:\"安装插件并添加到全局配置\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Integration ID or name (exports every integration when omitted)\"",
+          "to": "Nf(\"集成服务 ID 或名称，省略时导出全部\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Configured package target; omit to update all outdated plugins\"",
+          "to": "Nf(\"已配置的插件包，省略时更新所有有新版的插件\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Upgrade OpenCode to the latest or a specific version\"",
+          "to": "description:\"将 OpenCode 升级到最新版或指定版本\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Credential ID or label (opens an account picker when omitted)\"",
+          "to": "Nf(\"凭据 ID 或标签，省略时打开账号选择器\"",
+          "count": 2
+        },
+        {
+          "from": "description:\"print stored credentials, including secrets, as JSON\"",
+          "to": "description:\"以 JSON 格式输出已保存的凭据，包含密钥\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Authenticate with an OAuth-capable remote MCP server\"",
+          "to": "description:\"为支持 OAuth 的远程 MCP 服务器进行认证\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Provider form answer (key=value; repeat for multiple fields)\"",
+          "to": "jr(\"填写供应商表单（key=value，多个字段可重复传入）\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Additional allowed CORS origin (repeat for multiple origins)\"",
+          "to": "jr(\"额外允许的 CORS 来源，多个来源可重复传入\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Run with a private server instead of the background service\"",
+          "to": "jr(\"使用独立服务器运行\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"OpenAPI operation ID, or an HTTP method followed by a path\"",
+          "to": "Nf(\"OpenAPI 操作 ID，或 HTTP 方法加路径\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Remove stored OAuth credentials for an MCP server\"",
+          "to": "description:\"移除 MCP 服务器保存的 OAuth 凭据\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Connect to a server URL instead of the background service\"",
+          "to": "jr(\"连接到指定的服务器网址\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Session ID to continue, or to create if it does not exist\"",
+          "to": "jr(\"要继续的会话 ID，不存在时新建\"",
+          "count": 3
+        },
+        {
+          "from": "Nf(\"Command and arguments for a local server, passed after --\"",
+          "to": "Nf(\"本地服务器的启动命令和参数，放在 -- 后\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Print one-time links to connect a browser or app\"",
+          "to": "description:\"生成用于连接浏览器或应用的一次性链接\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Write to the global config instead of the project config\"",
+          "to": "jr(\"写入全局配置\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Print logs to stderr (server logs require --standalone)\"",
+          "to": "jr(\"将日志输出到标准错误（服务器日志需要 --standalone）\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Auto-approve permissions that are not explicitly denied\"",
+          "to": "jr(\"自动批准未明确拒绝的权限\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Show global paths (data, config, cache, state)\"",
+          "to": "description:\"显示数据、配置、缓存和状态的全局路径\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Environment variable for a local server, as name=value\"",
+          "to": "jr(\"本地服务器的环境变量，格式为 name=value\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"switch the active account for an integration\"",
+          "to": "description:\"切换集成服务的当前账号\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"List configured MCP servers and their status\"",
+          "to": "description:\"列出已配置的 MCP 服务器及状态\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Manage MCP (Model Context Protocol) servers\"",
+          "to": "description:\"管理 MCP 服务器\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Limit replay to the newest N messages (default: 200)\"",
+          "to": "jr(\"仅重放最近 N 条消息（默认 200 条）\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Import session data from a JSON file or URL\"",
+          "to": "description:\"从 JSON 文件或网址导入会话数据\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Version to upgrade to (with or without a leading v)\"",
+          "to": "Nf(\"要升级到的版本号，可带 v 前缀\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"import credentials exported by auth export\"",
+          "to": "description:\"导入 auth export 导出的凭据\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Use an external HTTP(S) server URL in pairing links\"",
+          "to": "jr(\"在配对链接中使用外部 HTTP(S) 服务器网址\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Remove a plugin from global configuration\"",
+          "to": "description:\"从全局配置中移除插件\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Model to use in the format provider/model#variant\"",
+          "to": "jr(\"使用的模型，格式为 provider/model#variant\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Integration ID, name, or well-known provider URL\"",
+          "to": "Nf(\"集成服务 ID、名称或供应商发现网址\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Add an MCP server to your configuration\"",
+          "to": "description:\"在配置中添加 MCP 服务器\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Start the minimal interactive interface\"",
+          "to": "description:\"启动精简交互界面\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Delete a session and its child sessions\"",
+          "to": "description:\"删除会话及其子会话\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Start an Agent Client Protocol server\"",
+          "to": "description:\"启动 ACP 服务器\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"JSON file to import (reads stdin when omitted)\"",
+          "to": "Nf(\"要导入的 JSON 文件，省略时从标准输入读取\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"HTTP header for a remote server, as name=value\"",
+          "to": "jr(\"远程服务器的 HTTP 请求头，格式为 name=value\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Limit to N most recent sessions (default: 100)\"",
+          "to": "jr(\"最多显示最近 N 个会话（默认 100 个）\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Run auth login instead of starting the server\"",
+          "to": "jr(\"执行 auth login 进行认证\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Make a request to the running server\"",
+          "to": "description:\"向正在运行的服务器发送请求\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Debugging and troubleshooting tools\"",
+          "to": "description:\"调试和故障排查工具\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"manage integrations and credentials\"",
+          "to": "description:\"管理集成和凭据\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Show what would be removed without removing\"",
+          "to": "jr(\"预览将移除的内容\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"list integrations and credentials\"",
+          "to": "description:\"列出集成和凭据\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Check package plugins for updates\"",
+          "to": "description:\"检查软件包插件的更新\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Setting value or environment variable name\"",
+          "to": "Nf(\"设置值或环境变量名称\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Model to use in the format provider/model\"",
+          "to": "jr(\"使用的模型，格式为 provider/model\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Redact sensitive transcript and file data\"",
+          "to": "jr(\"隐藏会话记录和文件中的敏感数据\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"OpenCode command line interface\"",
+          "to": "description:\"OpenCode 命令行界面\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Show shareable usage statistics\"",
+          "to": "description:\"显示可分享的用量统计\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Directory in which to import the session\"",
+          "to": "jr(\"导入会话的目标目录\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Start the v2 API and web server\"",
+          "to": "description:\"启动 v2 API 和 Web 服务器\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Restart the background server\"",
+          "to": "description:\"重启后台服务器\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Show background server status\"",
+          "to": "description:\"查看后台服务器状态\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Manage the background server\"",
+          "to": "description:\"管理后台服务器\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Run OpenCode with a message\"",
+          "to": "description:\"使用指定消息运行 OpenCode\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Export session data as JSON\"",
+          "to": "description:\"将会话数据导出为 JSON\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Start the background server\"",
+          "to": "description:\"启动后台服务器\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Unset service configuration\"",
+          "to": "description:\"清除服务配置项\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"List configuration sources\"",
+          "to": "description:\"列出配置来源\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"log out of a saved account\"",
+          "to": "description:\"退出已保存的账号\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Show the last N days; 0 means today\"",
+          "to": "jr(\"显示过去 N 天，0 表示今天\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Number of rows in detailed sections\"",
+          "to": "jr(\"明细行数\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Stop the background server\"",
+          "to": "description:\"停止后台服务器\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"List all available models\"",
+          "to": "description:\"列出所有可用模型\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Fork the session before continuing\"",
+          "to": "jr(\"派生会话后继续\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Get service configuration\"",
+          "to": "description:\"读取服务配置\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Set service configuration\"",
+          "to": "description:\"设置服务配置\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Request header in name:value form\"",
+          "to": "jr(\"请求头，格式为 name:value\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Fork the session when continuing\"",
+          "to": "jr(\"继续时派生会话\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"OpenAPI path or query parameter\"",
+          "to": "jr(\"OpenAPI 路径或查询参数\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"connect an integration\"",
+          "to": "description:\"连接集成服务\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Include built-in server plugins\"",
+          "to": "jr(\"包含服务器内置插件\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Update package plugins\"",
+          "to": "description:\"更新软件包插件\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Directory to start OpenCode in\"",
+          "to": "Nf(\"OpenCode 的启动目录\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"File to attach to the message\"",
+          "to": "jr(\"添加到消息的附件\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Reload configuration\"",
+          "to": "description:\"重新加载配置\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"URL for a remote MCP server\"",
+          "to": "jr(\"远程 MCP 服务器的网址\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Show cost and token details\"",
+          "to": "jr(\"显示费用和令牌明细\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Show every detailed section\"",
+          "to": "jr(\"显示所有明细\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Installation method to use\"",
+          "to": "jr(\"使用的安装方式\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"JSON file or URL to import\"",
+          "to": "Nf(\"要导入的 JSON 文件或网址\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Environment variable value\"",
+          "to": "Nf(\"环境变量值\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Continue the last session\"",
+          "to": "jr(\"继续上一次会话\"",
+          "count": 3
+        },
+        {
+          "from": "jr(\"Skip confirmation prompts\"",
+          "to": "jr(\"跳过确认提示\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Configured package target\"",
+          "to": "Nf(\"已配置的插件包\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Output statistics as JSON\"",
+          "to": "jr(\"以 JSON 格式输出统计数据\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Environment variable name\"",
+          "to": "Nf(\"环境变量名称\"",
+          "count": 2
+        },
+        {
+          "from": "description:\"List all agents\"",
+          "to": "description:\"列出所有代理\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Authentication method ID\"",
+          "to": "jr(\"认证方式 ID\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Show lifetime statistics\"",
+          "to": "jr(\"显示全部历史统计\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Manage sessions\"",
+          "to": "description:\"管理会话\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Manage plugins\"",
+          "to": "description:\"管理插件\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Integration ID or name\"",
+          "to": "Nf(\"集成服务 ID 或名称\"",
+          "count": 2
+        },
+        {
+          "from": "Nf(\"Name of the MCP server\"",
+          "to": "Nf(\"MCP 服务器名称\"",
+          "count": 3
+        },
+        {
+          "from": "Nf(\"Service setting or env\"",
+          "to": "Nf(\"服务设置项或 env\"",
+          "count": 3
+        },
+        {
+          "from": "description:\"List plugins\"",
+          "to": "description:\"列出插件\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Show tool reliability\"",
+          "to": "jr(\"显示工具可靠性\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Show a calendar year\"",
+          "to": "jr(\"显示指定自然年的数据\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Show thinking blocks\"",
+          "to": "jr(\"显示思考内容\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Session ID to delete\"",
+          "to": "Nf(\"要删除的会话 ID\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Session ID to export\"",
+          "to": "Nf(\"要导出的会话 ID\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Show model usage\"",
+          "to": "jr(\"显示模型用量\"",
+          "count": 1
+        },
+        {
+          "from": "Nf(\"Message to send\"",
+          "to": "Nf(\"要发送的消息\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Prompt to use\"",
+          "to": "jr(\"要发送的提示词\"",
+          "count": 2
+        },
+        {
+          "from": "jr(\"Output format\"",
+          "to": "jr(\"输出格式\"",
+          "count": 3
+        },
+        {
+          "from": "jr(\"Session title\"",
+          "to": "jr(\"会话标题\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Request body\"",
+          "to": "jr(\"请求正文\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Agent to use\"",
+          "to": "jr(\"使用的代理\"",
+          "count": 2
+        }
+      ],
+      "chunk-3dkk5ehy.js": [
+        {
+          "from": "Missing required argument: ${this.argument}",
+          "to": "缺少必填参数 ${this.argument}",
+          "count": 1
+        },
+        {
+          "from": "Missing required flag: --${this.option}",
+          "to": "缺少必填选项 --${this.option}",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Start wizard mode for a command\"",
+          "to": "jr(\"启动命令向导\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Print shell completion script\"",
+          "to": "jr(\"输出 Shell 补全脚本\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Sets the minimum log level\"",
+          "to": "jr(\"设置最低日志级别\"",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Show version information\"",
+          "to": "jr(\"显示版本\"",
+          "count": 1
+        },
+        {
+          "from": "(choices: ${o.join(\", \")})",
+          "to": "（可选值：${o.join(\", \")}）",
+          "count": 1
+        },
+        {
+          "from": "jr(\"Show help information\"",
+          "to": "jr(\"显示帮助\"",
+          "count": 1
+        },
+        {
+          "from": "bold(\"GLOBAL FLAGS\"",
+          "to": "bold(\"全局选项\"",
+          "count": 1
+        },
+        {
+          "from": "bold(\"DESCRIPTION\"",
+          "to": "bold(\"说明\"",
+          "count": 1
+        },
+        {
+          "from": "bold(\"SUBCOMMANDS\"",
+          "to": "bold(\"子命令\"",
+          "count": 1
+        },
+        {
+          "from": "bold(\"ARGUMENTS\"",
+          "to": "bold(\"参数\"",
+          "count": 1
+        },
+        {
+          "from": "bold(\"EXAMPLES\"",
+          "to": "bold(\"示例\"",
+          "count": 1
+        },
+        {
+          "from": "\" (optional)\"",
+          "to": "\"（可选）\"",
+          "count": 1
+        },
+        {
+          "from": "bold(\"USAGE\"",
+          "to": "bold(\"用法\"",
+          "count": 1
+        },
+        {
+          "from": "bold(\"FLAGS\"",
+          "to": "bold(\"选项\"",
+          "count": 1
+        }
+      ],
+      "chunk-t5qeknxt.js": [
+        {
+          "from": "description:\"Type text into the current session's terminal in the user's TUI, opening one first if needed. Text is sent as-is; include a trailing newline to run a command.\"",
+          "to": "description:\"向当前会话的终端输入文本，必要时先打开终端。文本会按原样发送，末尾添加换行即可执行命令。\"",
+          "count": 1
+        },
+        {
+          "from": "if(W.format)return W.format(U);let P=W.values?.indexOf(U);return P===void 0||P<0?String(U):W.labels?.[P]??String(U)",
+          "to": "if(W.format)return W.format(U);let P=W.values?.indexOf(U);let J=P===void 0||P<0?String(U):W.labels?.[P]??String(U);return Object.hasOwn({\"system\":\"跟随系统\",\"dark\":\"深色\",\"light\":\"浅色\",\"off\":\"关闭\",\"on\":\"开启\",\"hide\":\"隐藏\",\"show\":\"显示\",\"auto\":\"自动\",\"source\":\"源码\",\"rendered\":\"渲染\",\"none\":\"无\",\"low\":\"简略\",\"medium\":\"适中\",\"high\":\"详细\",\"horizontal\":\"横向\",\"vertical\":\"纵向\",\"split\":\"并排\",\"unified\":\"统一\",\"word\":\"按单词\",\"compact\":\"折叠\",\"full\":\"完整\",\"manual\":\"手动复制\",\"select\":\"选中即复制\",\"launch directory\":\"启动目录\",\"active session\":\"当前会话目录\",\"prompt\":\"询问\",\"auto accept\":\"自动批准\",\"current directory\":\"当前目录\",\"global\":\"全局\",\"status icons\":\"状态图标\",\"always show numbers\":\"始终显示数字\"},J)&&W.path.join(\".\")!==\"theme.name\"?{\"system\":\"跟随系统\",\"dark\":\"深色\",\"light\":\"浅色\",\"off\":\"关闭\",\"on\":\"开启\",\"hide\":\"隐藏\",\"show\":\"显示\",\"auto\":\"自动\",\"source\":\"源码\",\"rendered\":\"渲染\",\"none\":\"无\",\"low\":\"简略\",\"medium\":\"适中\",\"high\":\"详细\",\"horizontal\":\"横向\",\"vertical\":\"纵向\",\"split\":\"并排\",\"unified\":\"统一\",\"word\":\"按单词\",\"compact\":\"折叠\",\"full\":\"完整\",\"manual\":\"手动复制\",\"select\":\"选中即复制\",\"launch directory\":\"启动目录\",\"active session\":\"当前会话目录\",\"prompt\":\"询问\",\"auto accept\":\"自动批准\",\"current directory\":\"当前目录\",\"global\":\"全局\",\"status icons\":\"状态图标\",\"always show numbers\":\"始终显示数字\"}[J]:J",
+          "count": 1
+        },
+        {
+          "from": "filter((p)=>p!==\"default\").map((p)=>({value:p,title:p,onSelect:()=>{n.clear(),r.model.variant.set(p)}}))",
+          "to": "filter((p)=>p!==\"default\").map((p)=>({value:p,title:((value)=>{const labels={\"default\":\"默认\",\"none\":\"关闭\",\"minimal\":\"极低\",\"low\":\"低\",\"medium\":\"中\",\"high\":\"高\",\"xhigh\":\"很高\",\"max\":\"最高\",\"ultra\":\"极高\",\"auto\":\"自动\"};return Object.hasOwn(labels,value)?labels[value]:value})(p),searchText:p,onSelect:()=>{n.clear(),r.model.variant.set(p)}}))",
+          "count": 1
+        },
+        {
+          "from": "description:\"Open a terminal for the current session in the user's TUI, without taking keyboard focus.\"",
+          "to": "description:\"在终端界面中为当前会话打开终端，保留键盘焦点。\"",
+          "count": 1
+        },
+        {
+          "from": "V()?\"connect integration\":\"view all integrations\":V()?\"Connect an integration\":\"View all integrations\"",
+          "to": "V()?\"连接服务\":\"查看所有集成\":V()?\"连接服务\":\"查看所有集成\"",
+          "count": 1
+        },
+        {
+          "from": "?\"Updating OpenCode\":D().type===\"available\"||D().type===\"failed\"?\"Update available\":\"Update\"",
+          "to": "?\"正在更新 OpenCode\":D().type===\"available\"||D().type===\"failed\"?\"有可用更新\":\"更新\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Update successful! Restart closes OpenCode, then run opencode to use the new version.\"",
+          "to": "F(\"更新成功！重启会关闭当前 OpenCode，再运行 opencode 即可使用新版。\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"OpenCode Go gives you reliable access to the best open-source models for $10/month.\"",
+          "to": "F(\"OpenCode Go 每月 10 美元，可使用多种开源模型。\"",
+          "count": 2
+        },
+        {
+          "from": "F(\"An update is available. After installing, you'll be prompted to restart OpenCode.\"",
+          "to": "F(\"有可用更新，安装后会提示重启 OpenCode。\"",
+          "count": 1
+        },
+        {
+          "from": "function _c(r){if(r===\"pdf\")return\"PDF\";return r.charAt(0).toUpperCase()+r.slice(1)}",
+          "to": "function _c(r){return ((value)=>{const labels={\"text\":\"文本\",\"image\":\"图片\",\"audio\":\"音频\",\"video\":\"视频\",\"pdf\":\"PDF\"};return Object.hasOwn(labels,value)?labels[value]:r.charAt(0).toUpperCase()+r.slice(1)})(r)}",
+          "count": 1
+        },
+        {
+          "from": "description:\"Let the agent open terminals in this TUI (requires server support)\"",
+          "to": "description:\"允许代理在当前界面打开终端（需要服务器支持）\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Run `opencode service set hostname 0.0.0.0` to access the service remotely.\"",
+          "to": "F(\"运行 `opencode service set hostname 0.0.0.0` 后可远程访问服务。\"",
+          "count": 1
+        },
+        {
+          "from": "ht()?\"Review\":`Field ${Math.min(P.tab,ne().length-1)+1} of ${ne().length}`",
+          "to": "ht()?\"检查回答\":`第 ${Math.min(P.tab,ne().length-1)+1} 项，共 ${ne().length} 项`",
+          "count": 1
+        },
+        {
+          "from": "message:\"Could not open the browser. Copy the URL and continue manually.\"",
+          "to": "message:\"无法打开浏览器。请复制网址并手动继续。\"",
+          "count": 1
+        },
+        {
+          "from": "title:Q()?\"Show current directory sessions\":\"Show all project sessions\"",
+          "to": "title:Q()?\"显示当前目录会话\":\"显示所有项目会话\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether chat markdown is rendered or shown as source\"",
+          "to": "description:\"选择渲染 Markdown 或查看源码\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether large pastes are summarized or shown in full\"",
+          "to": "description:\"选择折叠或完整显示大段粘贴内容\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether a sound plays when a session needs attention\"",
+          "to": "description:\"会话需要处理时是否播放提示音\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether release highlights are shown after an update\"",
+          "to": "description:\"更新后是否显示版本亮点\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether tabs are per directory or shared everywhere\"",
+          "to": "description:\"选择按目录管理或全局共享标签页\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether your editor's selection is added to prompts\"",
+          "to": "description:\"是否把编辑器选区添加到提示词\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether attached images are previewed in the prompt\"",
+          "to": "description:\"是否在输入区预览附加图片\"",
+          "count": 1
+        },
+        {
+          "from": "description:k.description?.replace(/\\s+/g,\" \").trim(),value:k.id",
+          "to": "description:((value)=>{const labels={\"Use this skill for any question about OpenCode itself, including how OpenCode works, using or configuring it, migrating from V1 to V2, troubleshooting it, developing plugins or integrations, using the OpenCode SDK, clients, server, or API, and contributing to the OpenCode codebase. Also use it for OpenCode agents, commands, skills, tools, permissions, MCP servers, providers, models, themes, keybinds, formatters, the CLI, TUI, desktop app, and web app.\":\"解答 OpenCode 的使用、配置、版本迁移和故障排查问题，也涵盖 SDK、API、插件、集成、代理、权限、模型、主题和快捷键。\",\"Use when the user wants to report an opencode issue or bug. Collect standard diagnostics, add user-specific reproduction context, and publish the issue with GitHub CLI.\":\"用于报告 OpenCode 问题。收集诊断信息和复现步骤，并通过 GitHub CLI 发布问题。\",\"Use the in-app browser: open and read pages, click and fill forms, take screenshots, check console and network logs, and profile performance and memory. Load it before your first browser tool call.\":\"使用内置浏览器打开页面、操作表单、截图，或检查日志、性能和内存。首次调用浏览器工具前加载此技能。\"};return Object.hasOwn(labels,value)?labels[value]:value})(k.description?.replace(/\\s+/g,\" \").trim()),value:k.id",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether consecutive reads and searches are grouped\"",
+          "to": "description:\"是否合并连续的读取和搜索操作\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether permission requests ask you or auto accept\"",
+          "to": "description:\"设置权限请求是询问还是自动批准\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether the window title shows the current session\"",
+          "to": "description:\"窗口标题是否显示当前会话\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" to see all available actions and commands in any context.\")",
+          "to": "F(\" 查看当前界面可用的操作和命令。\")",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether tokens per second are shown for responses\"",
+          "to": "description:\"是否显示回复的每秒令牌数\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether scrolling speeds up the faster you scroll\"",
+          "to": "description:\"是否根据滚动速度自动加速\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether tabs show status icons or always numbers\"",
+          "to": "description:\"选择用状态图标或数字标记标签页\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether to notify when a session needs attention\"",
+          "to": "description:\"会话需要处理时是否发送通知\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether tabs run along the top or down the side\"",
+          "to": "description:\"选择在顶部或侧边显示标签页\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether diffs are side by side or in one column\"",
+          "to": "description:\"选择并排或单列显示差异\"",
+          "count": 1
+        },
+        {
+          "from": "\"Could not search sessions. Change the search to try again.\"",
+          "to": "\"无法搜索会话。请修改搜索内容后重试。\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"How long the leader key waits for the next key\"",
+          "to": "description:\"设置按下组合键前缀后等待下一键的时间\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether a scrollbar is shown next to the chat\"",
+          "to": "description:\"是否在会话旁显示滚动条\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Connect a provider for access to more models\"",
+          "to": "description:\"连接供应商以使用更多模型\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether the sidebar shows when there is room\"",
+          "to": "description:\"空间足够时是否显示侧栏\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Open a link to connect. Links work once and expire in \"",
+          "to": "F(\"打开链接进行连接。链接仅可使用一次，有效期为 \"",
+          "count": 1
+        },
+        {
+          "from": "message:\"The current model does not support any variants.\"",
+          "to": "message:\"当前模型不支持变体。\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Dark or light variant, or follow the system\"",
+          "to": "description:\"选择深色、浅色或跟随系统\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether model thinking is shown in the chat\"",
+          "to": "description:\"是否显示模型的思考过程\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"How much tool activity is shown in the chat\"",
+          "to": "description:\"设置会话中工具操作的显示详细程度\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether the interface responds to the mouse\"",
+          "to": "description:\"是否启用鼠标操作\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Leave shell mode before undoing a queued prompt\"",
+          "to": "message:\"请退出 Shell 模式后再撤销排队消息\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"No text content found in last assistant message\"",
+          "to": "message:\"上一条助手消息没有文本内容\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether a file tree is shown next to diffs\"",
+          "to": "description:\"是否在差异旁显示文件树\"",
+          "count": 1
+        },
+        {
+          "from": "command:\"model.dialog.usage\",title:d()?\"usage\":\"Usage\"",
+          "to": "command:\"model.dialog.usage\",title:\"用量\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether spinners and transitions animate\"",
+          "to": "description:\"是否播放加载和过渡动画\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether the developer tools bar is shown\"",
+          "to": "description:\"是否显示开发者工具栏\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Earlier output omitted \\xB7 showing recent output\"",
+          "to": "F(\"已省略较早的输出，仅显示近期内容\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Color theme used across the interface\"",
+          "to": "description:\"设置界面使用的颜色主题\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether diffs show one file at a time\"",
+          "to": "description:\"是否一次只显示一个文件的差异\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether images are shown in the chat\"",
+          "to": "description:\"是否在会话中显示图片\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Refreshing sessions and projects\\u2026\"",
+          "to": "children:\"正在刷新会话和项目…\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Session transcript copied to clipboard!\"",
+          "to": "message:\"会话记录已复制到剪贴板\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Share this when reporting an issue\"",
+          "to": "description:\"报告问题时请附上这些信息\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Connect an integration to send prompts\"",
+          "to": "message:\"连接服务后即可发送消息\"",
+          "count": 1
+        },
+        {
+          "from": "value:g.id,title:g.id,description:g.description",
+          "to": "value:g.id,title:g.id===\"build\"?\"构建\":g.id===\"plan\"?\"规划\":g.id,searchText:g.id,description:((value)=>{const labels={\"The default agent. Executes tools based on configured permissions.\":\"默认代理，按配置的权限执行工具。\",\"Read-only agent for exploring the codebase and planning work before implementation.\":\"只读代理，用于查看代码并在实施前制定计划。\",\"General-purpose agent for researching complex questions and executing multi-step tasks. Use this agent to execute multiple units of work in parallel.\":\"通用代理，用于研究复杂问题、执行多步任务和并行处理多项工作。\"};return Object.hasOwn(labels,value)?labels[value]:value})(g.description)",
+          "count": 1
+        },
+        {
+          "from": "F(\" fewer cached tokens than the previous step\"",
+          "to": "F(\" 个缓存令牌，少于上一步\"",
+          "count": 1
+        },
+        {
+          "from": "B(A?.value)?\"unfavorite\":\"favorite\":\"Favorite\"",
+          "to": "B(A?.value)?\"取消收藏\":\"收藏\":\"收藏\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether long lines in diffs wrap\"",
+          "to": "description:\"是否对差异中的长行自动换行\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether selecting text copies it\"",
+          "to": "description:\"是否在选中文本时自动复制\"",
+          "count": 1
+        },
+        {
+          "from": "\"Previous update action\":\"Next update action\"",
+          "to": "\"上一个更新操作\":\"下一个更新操作\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Directory new sessions start in\"",
+          "to": "description:\"设置新会话的起始目录\"",
+          "count": 1
+        },
+        {
+          "from": "title:Q()?\"current directory\":\"all projects\"",
+          "to": "title:Q()?\"当前目录\":\"所有项目\"",
+          "count": 1
+        },
+        {
+          "from": "\"Switch to light mode\":\"Switch to dark mode\"",
+          "to": "\"切换到浅色模式\":\"切换到深色模式\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"An unexpected error stopped the session.\"",
+          "to": "F(\"意外错误导致会话停止。\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"How far each scroll step moves\"",
+          "to": "description:\"设置每次滚动的距离\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"undo messages and file changes\"",
+          "to": "description:\"撤销消息和文件改动\"",
+          "count": 1
+        },
+        {
+          "from": "ve=F(\" for \");return c(Ie,ve),l(Ie,ee,null)",
+          "to": "ve=F(\" · \");return c(Ie,ve),l(Ie,ee,null)",
+          "count": 1
+        },
+        {
+          "from": "description:\"Whether sessions open in tabs\"",
+          "to": "description:\"是否在标签页中打开会话\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Failed to copy session transcript\"",
+          "to": "message:\"复制会话记录失败\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" to move running work to the background\"",
+          "to": "F(\" 将正在运行的任务移到后台\"",
+          "count": 1
+        },
+        {
+          "from": "\"What is the tech stack of this project?\"",
+          "to": "\"这个项目用了哪些技术？\"",
+          "count": 1
+        },
+        {
+          "from": "No matches \\xB7 search all sessions with ",
+          "to": "没有匹配结果 · 搜索所有会话：",
+          "count": 1
+        },
+        {
+          "from": "description:\"Preview the new TUI designs\"",
+          "to": "description:\"预览新版终端界面\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Close and reopen Skills to try again.\"",
+          "to": "F(\"关闭并重新打开技能面板后重试。\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Editor context cannot be queued\"",
+          "to": "message:\"编辑器上下文无法加入队列\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Session ID copied to clipboard!\"",
+          "to": "message:\"会话 ID 已复制到剪贴板\"",
+          "count": 1
+        },
+        {
+          "from": "`Connect \"${ce.name}\" to use its tools.`",
+          "to": "`连接“${ce.name}”后可使用其工具。`",
+          "count": 1
+        },
+        {
+          "from": "\"Disable animations\":\"Enable animations\"",
+          "to": "\"关闭动画\":\"开启动画\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Debug info copied to clipboard\"",
+          "to": "message:\"调试信息已复制到剪贴板\"",
+          "count": 1
+        },
+        {
+          "from": "titlePlaceholder:\"Search queued prompts\"",
+          "to": "titlePlaceholder:\"搜索队列消息\"",
+          "count": 1
+        },
+        {
+          "from": "r.model.variants.length>0?[\"Reasoning\"]",
+          "to": "r.model.variants.length>0?[\"推理\"]",
+          "count": 1
+        },
+        {
+          "from": "\"Searching sessions and projects\\u2026\"",
+          "to": "\"正在搜索会话和项目…\"",
+          "count": 1
+        },
+        {
+          "from": "description:Ve.description,queueable:!0",
+          "to": "description:((value)=>{const labels={\"keep working until an objective is met [pause|resume|clear]\":\"持续工作直到达成目标 [pause|resume|clear]\",\"guided AGENTS.md setup\":\"引导创建或更新 AGENTS.md\",\"review changes [commit|branch|pr], defaults to uncommitted\":\"审查改动 [commit|branch|pr]，默认审查未提交的改动\",\"schedule a prompt for later, or list, pause and delete this session's schedules\":\"安排稍后发送消息，或查看、暂停和删除会话计划\"};return Object.hasOwn(labels,value)?labels[value]:value})(Ve.description),queueable:!0",
+          "count": 1
+        },
+        {
+          "from": "F(\"Share this when reporting an issue.\"",
+          "to": "F(\"报告问题时请附上这些信息。\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Close and reopen Pair to try again.\"",
+          "to": "F(\"关闭并重新打开配对界面后重试。\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"message text to clipboard\"",
+          "to": "description:\"将消息文本复制到剪贴板\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"MCP server needs authentication\"",
+          "to": "title:\"MCP 服务器需要认证\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Reloading configuration\\u2026\"",
+          "to": "message:\"正在重新加载配置…\"",
+          "count": 1
+        },
+        {
+          "from": "Installing OpenCode ${B.version}\\u2026",
+          "to": "正在安装 OpenCode ${B.version}…",
+          "count": 1
+        },
+        {
+          "from": "placeholder:\"Worktree name (optional)\"",
+          "to": "placeholder:\"工作树名称（可选）\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"This prompt cannot be queued\"",
+          "to": "message:\"这条消息无法加入队列\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"You've used today's free messages.\"",
+          "to": "F(\"今天的免费消息次数已用完。\"",
+          "count": 3
+        },
+        {
+          "from": "message:\"Message copied to clipboard!\"",
+          "to": "message:\"消息已复制到剪贴板\"",
+          "count": 1
+        },
+        {
+          "from": "`Failed to delete session: ${Xo(pe)}`",
+          "to": "`删除会话失败：${Xo(pe)}`",
+          "count": 1
+        },
+        {
+          "from": "F(\"Could not load server information\"",
+          "to": "F(\"无法加载服务器信息\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Checking for updates\\u2026\"",
+          "to": "children:\"正在检查更新…\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"view message in session\"",
+          "to": "description:\"在会话中查看消息\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Failed to undo pending prompt\"",
+          "to": "title:\"无法撤销待发送消息\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"No assistant messages found\"",
+          "to": "message:\"未找到助手消息\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Failed to copy to clipboard\"",
+          "to": "message:\"复制到剪贴板失败\"",
+          "count": 1
+        },
+        {
+          "from": "\"Search sessions and projects\\u2026\"",
+          "to": "\"搜索会话和项目…\"",
+          "count": 1
+        },
+        {
+          "from": "()?\"Connected\":r.connection.status()",
+          "to": "()?\"已连接\":r.connection.status()",
+          "count": 1
+        },
+        {
+          "from": "children:\"Disabled in configuration\"",
+          "to": "children:\"已在配置中禁用\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Volume of alert sounds\"",
+          "to": "description:\"设置提示音的音量\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Loading server information\\u2026\"",
+          "to": "F(\"正在加载服务器信息…\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Run /mcps to view details.\"",
+          "to": "message:\"运行 /mcps 查看详情。\"",
+          "count": 1
+        },
+        {
+          "from": "M(D?.value)?\"unfavorite\":\"favorite\"",
+          "to": "M(D?.value)?\"取消收藏\":\"收藏\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Confirm autocomplete action\"",
+          "to": "title:\"确认自动补全操作\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"OpenCode is already up to date.\"",
+          "to": "F(\"OpenCode 已是最新版。\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy last assistant message\"",
+          "to": "title:\"复制最近一条助手消息\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Failed to copy session ID\"",
+          "to": "message:\"复制会话 ID 失败\"",
+          "count": 1
+        },
+        {
+          "from": "P.editing&&!Fe()?\"close\":\"dismiss\"",
+          "to": "P.editing&&!Fe()?\"关闭编辑\":\"关闭\"",
+          "count": 1
+        },
+        {
+          "from": "get variant(){return Nt().variant}",
+          "to": "get variant(){return ((value)=>{const labels={\"default\":\"默认\",\"none\":\"关闭\",\"minimal\":\"极低\",\"low\":\"低\",\"medium\":\"中\",\"high\":\"高\",\"xhigh\":\"很高\",\"max\":\"最高\",\"ultra\":\"极高\",\"auto\":\"自动\"};return Object.hasOwn(labels,value)?labels[value]:value})(Nt().variant)}",
+          "count": 1
+        },
+        {
+          "from": "titlePlaceholder:\"Search settings\"",
+          "to": "titlePlaceholder:\"搜索设置\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No recent sessions or projects\"",
+          "to": "F(\"没有最近的会话或项目\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Loading worktrees\\u2026\"",
+          "to": "children:\"正在加载工作树…\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Leave blank for a random name.\"",
+          "to": "F(\"留空时自动生成名称。\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous autocomplete item\"",
+          "to": "title:\"上一项自动补全\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Complete autocomplete item\"",
+          "to": "title:\"应用补全项\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Failed to change directory\"",
+          "to": "title:\"无法更改目录\"",
+          "count": 2
+        },
+        {
+          "from": "titlePlaceholder:\"Search commands\"",
+          "to": "titlePlaceholder:\"搜索命令\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"create a new session\"",
+          "to": "description:\"创建新会话\"",
+          "count": 1
+        },
+        {
+          "from": "titlePlaceholder:\"Search timeline\"",
+          "to": "titlePlaceholder:\"搜索时间线\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy authorization details\"",
+          "to": "title:\"复制授权信息\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Failed to export session\"",
+          "to": "message:\"导出会话失败\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Upgrade to OpenCode Go \\u2192 \"",
+          "to": "F(\"升级至 OpenCode Go → \"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Restarting service\\u2026\"",
+          "to": "message:\"正在重启服务…\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Background blocking tools\"",
+          "to": "title:\"将阻塞工具移到后台\"",
+          "count": 2
+        },
+        {
+          "from": "message:\"Copied URL to clipboard\"",
+          "to": "message:\"网址已复制到剪贴板\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Unable to load terminal\"",
+          "to": "message:\"无法加载终端\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Jump to last user message\"",
+          "to": "title:\"跳到最后一条用户消息\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Export session transcript\"",
+          "to": "title:\"导出会话记录\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Loading session history\\u2026\"",
+          "to": "F(\"正在加载会话历史…\"",
+          "count": 1
+        },
+        {
+          "from": "titlePlaceholder:\"Search models\"",
+          "to": "titlePlaceholder:\"搜索模型\"",
+          "count": 1
+        },
+        {
+          "from": "titlePlaceholder:\"Search themes\"",
+          "to": "titlePlaceholder:\"搜索主题\"",
+          "count": 1
+        },
+        {
+          "from": "titlePlaceholder:\"Search agents\"",
+          "to": "titlePlaceholder:\"搜索代理\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Loading worktrees failed\"",
+          "to": "title:\"加载工作树失败\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Creating worktree failed\"",
+          "to": "title:\"创建工作树失败\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Select autocomplete item\"",
+          "to": "title:\"选择补全项\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Change working directory\"",
+          "to": "title:\"更改工作目录\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Forking session\\u2026\"",
+          "to": "children:\"正在派生会话…\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Toggle session scrollbar\"",
+          "to": "title:\"切换会话滚动条\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Writing command\\u2026\"",
+          "to": "children:\"正在写入命令…\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Configuration reloaded\"",
+          "to": "message:\"配置已重新加载\"",
+          "count": 1
+        },
+        {
+          "from": "`MCP server failed: ${ce.name}`",
+          "to": "`MCP 服务器失败：${ce.name}`",
+          "count": 1
+        },
+        {
+          "from": "message:\"Directory is required\"",
+          "to": "message:\"必须指定目录\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous prompt history\"",
+          "to": "title:\"上一条输入历史\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Authorization expired\"",
+          "to": "message:\"授权已过期\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Toggle active subagents\"",
+          "to": "title:\"切换活动子代理\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy session transcript\"",
+          "to": "title:\"复制会话记录\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Open session or project\"",
+          "to": "title:\"打开会话或项目\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Show release highlights\"",
+          "to": "title:\"查看版本亮点\"",
+          "count": 1
+        },
+        {
+          "from": "d()!==\"Free\"?[`${d()} per 1M`]",
+          "to": "d()!==\"免费\"?[`${d()} / 百万令牌`]",
+          "count": 1
+        },
+        {
+          "from": "agentLabel:Ut?Tc(Ut.id):void 0",
+          "to": "agentLabel:Ut?(Ut.id===\"build\"?\"构建\":Ut.id===\"plan\"?\"规划\":Tc(Ut.id)):void 0",
+          "count": 1
+        },
+        {
+          "from": "F(\"Server details unavailable\"",
+          "to": "F(\"无法获取服务器详情\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Show project worktrees\"",
+          "to": "title:\"显示项目工作树\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next autocomplete item\"",
+          "to": "title:\"下一项自动补全\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"View image attachments\"",
+          "to": "title:\"查看图片附件\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Open authorization URL\"",
+          "to": "title:\"打开授权网址\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous export option\"",
+          "to": "title:\"上一个导出选项\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Toggle subagent picker\"",
+          "to": "title:\"切换子代理选择器\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" \\xB7 Switch model \\u2192 \"",
+          "to": "F(\" · 切换模型 → \"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Favorite cycle reverse\"",
+          "to": "title:\"反向切换收藏模型\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Connect an integration\"",
+          "to": "title:\"连接服务\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Data migration failed\"",
+          "to": "title:\"数据迁移失败\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Remove editor context\"",
+          "to": "title:\"移除编辑器上下文\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Failed to open editor\"",
+          "to": "title:\"打开编辑器失败\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Confirm update action\"",
+          "to": "title:\"确认更新操作\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Copied to clipboard\"",
+          "to": "message:\"已复制到剪贴板\"",
+          "count": 3
+        },
+        {
+          "from": "title:\"Undo previous message\"",
+          "to": "title:\"撤销上一条消息\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous user message\"",
+          "to": "title:\"上一条用户消息\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"No variants available\"",
+          "to": "title:\"没有可用的模型变体\"",
+          "count": 1
+        },
+        {
+          "from": "if(Zr(r.model))return\"Free\";",
+          "to": "if(Zr(r.model))return\"免费\";",
+          "count": 1
+        },
+        {
+          "from": "\"Fix a TODO in the codebase\"",
+          "to": "\"修复代码中的一项待办\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No experiments available\"",
+          "to": "F(\"没有可用的实验功能\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"New session location\"",
+          "to": "title:\"新会话目录\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Dismiss autocomplete\"",
+          "to": "title:\"关闭自动补全\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Paste from clipboard\"",
+          "to": "title:\"从剪贴板粘贴\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Navigate to subagent\"",
+          "to": "title:\"跳转到子代理\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous output page\"",
+          "to": "title:\"上一页输出\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Change export option\"",
+          "to": "title:\"更改导出选项\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Select export option\"",
+          "to": "title:\"选择导出选项\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Go to parent session\"",
+          "to": "title:\"返回父会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Show command palette\"",
+          "to": "title:\"打开命令面板\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Switch model variant\"",
+          "to": "title:\"切换模型变体\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Reload configuration\"",
+          "to": "title:\"重新加载配置\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next prompt history\"",
+          "to": "title:\"下一条输入历史\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"First loaded output\"",
+          "to": "title:\"首条已加载输出\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Follow shell output\"",
+          "to": "title:\"跟随 Shell 输出\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Sanitize sensitive data\"",
+          "to": "F(\"清除敏感数据\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Close export result\"",
+          "to": "title:\"关闭导出结果\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"View queued prompts\"",
+          "to": "title:\"查看队列消息\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Close terminal pane\"",
+          "to": "title:\"关闭终端面板\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous unread tab\"",
+          "to": "title:\"上一个未读标签页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Model cycle reverse\"",
+          "to": "title:\"反向切换模型\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Agent cycle reverse\"",
+          "to": "title:\"反向切换代理\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Service restarted\"",
+          "to": "message:\"服务已重启\"",
+          "count": 1
+        },
+        {
+          "from": "M()?\"\\u2713 copied\":\"copy\"",
+          "to": "M()?\"✓ 已复制\":\"复制\"",
+          "count": 1
+        },
+        {
+          "from": "return Zr(A)?\"Free\":void 0",
+          "to": "return Zr(A)?\"免费\":void 0",
+          "count": 1
+        },
+        {
+          "from": "Search sessions in ${ee()}",
+          "to": "在 ${ee()} 中搜索会话",
+          "count": 1
+        },
+        {
+          "from": "\"Could not load sessions.\"",
+          "to": "\"无法加载会话。\"",
+          "count": 1
+        },
+        {
+          "from": "\"Searching sessions\\u2026\"",
+          "to": "\"正在搜索会话…\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Unknown plugin route: \"",
+          "to": "F(\"未知的插件页面：\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Time to first draw\"",
+          "to": "label:\"首次绘制用时\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Release highlights\"",
+          "to": "title:\"版本亮点\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Return to projects\"",
+          "to": "title:\"返回项目\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Submit answer edit\"",
+          "to": "title:\"提交编辑后的回答\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Waiting for code\\u2026\"",
+          "to": "F(\"正在等待授权码…\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous Go option\"",
+          "to": "title:\"上一个 Go 方案\"",
+          "count": 3
+        },
+        {
+          "from": "title:\"Interrupt subagent\"",
+          "to": "title:\"中断子代理\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scroll output down\"",
+          "to": "title:\"向下滚动输出\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Kill shell command\"",
+          "to": "title:\"终止 Shell 命令\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next export option\"",
+          "to": "title:\"下一个导出选项\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Focus session pane\"",
+          "to": "title:\"聚焦会话面板\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Toggle debug panel\"",
+          "to": "title:\"切换调试面板\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Transcript images\"",
+          "to": "title:\"会话图片\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Hide autocomplete\"",
+          "to": "title:\"隐藏自动补全\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Could not load skills\"",
+          "to": "F(\"无法加载技能\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Interrupt session\"",
+          "to": "title:\"中断会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Manage workspaces\"",
+          "to": "title:\"管理工作区\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Model unavailable\"",
+          "to": "title:\"模型不可用\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Clear answer edit\"",
+          "to": "title:\"清空回答\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Leave answer edit\"",
+          "to": "title:\"退出回答编辑\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Confirm Go option\"",
+          "to": "title:\"确认 Go 方案\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous subagent\"",
+          "to": "title:\"上一个子代理\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"View shell output\"",
+          "to": "title:\"查看 Shell 输出\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous terminal\"",
+          "to": "title:\"上一个终端\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Nothing to undo\"",
+          "to": "message:\"没有可撤销的操作\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next user message\"",
+          "to": "title:\"下一条用户消息\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Jump to latest \\u2193\"",
+          "to": "F(\"跳到最新内容 ↓\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"! Likely cache bust: \"",
+          "to": "F(\"! 可能的缓存失效：\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Writing command\\u2026\"",
+          "to": "F(\"正在写入命令…\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Reopen closed tab\"",
+          "to": "title:\"重新打开已关闭的标签页\"",
+          "count": 1
+        },
+        {
+          "from": "\"Search worktrees\\u2026\"",
+          "to": "\"搜索工作树…\"",
+          "count": 1
+        },
+        {
+          "from": "\"Loading sessions\\u2026\"",
+          "to": "\"正在加载会话…\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"connect provider\"",
+          "to": "title:\"连接模型供应商\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Loading skills\\u2026\"",
+          "to": "F(\"正在加载技能…\"",
+          "count": 1
+        },
+        {
+          "from": "desc:\"Manage workspaces\"",
+          "to": "desc:\"管理工作区\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scroll to output\"",
+          "to": "title:\"滚动到输出\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Forked session\"",
+          "to": "message:\"已派生会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scroll output up\"",
+          "to": "title:\"向上滚动输出\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next output page\"",
+          "to": "title:\"下一页输出\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy export path\"",
+          "to": "title:\"复制导出路径\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Session exported\"",
+          "to": "title:\"会话已导出\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous message\"",
+          "to": "title:\"上一条消息\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" or /redo to restore\"",
+          "to": "F(\" 或使用 /redo 恢复\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Focus right pane\"",
+          "to": "title:\"聚焦右侧面板\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Open MCP servers\"",
+          "to": "label:\"打开 MCP 服务器\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Suspend terminal\"",
+          "to": "title:\"挂起终端\"",
+          "count": 1
+        },
+        {
+          "from": "Ye(pe.get(We),\"Pinned\")",
+          "to": "Ye(pe.get(We),\"已固定\")",
+          "count": 1
+        },
+        {
+          "from": "\"No sessions available\"",
+          "to": "\"暂无会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Developer tools\"",
+          "to": "title:\"开发者工具\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy debug info\"",
+          "to": "title:\"复制调试信息\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No skills available\"",
+          "to": "F(\"没有可用的技能\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Exit shell mode\"",
+          "to": "title:\"退出 Shell 模式\"",
+          "count": 3
+        },
+        {
+          "from": "title:\"Previous answer\"",
+          "to": "title:\"上一个回答\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Message Actions\"",
+          "to": "title:\"消息操作\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Select terminal\"",
+          "to": "title:\"选择终端\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Jump to message\"",
+          "to": "title:\"跳转到消息\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Compact session\"",
+          "to": "title:\"压缩会话上下文\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy session ID\"",
+          "to": "title:\"复制会话 ID\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next unread tab\"",
+          "to": "title:\"下一个未读标签页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Update OpenCode\"",
+          "to": "title:\"更新 OpenCode\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Restart service\"",
+          "to": "title:\"重启服务\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"View debug info\"",
+          "to": "title:\"查看调试信息\"",
+          "count": 1
+        },
+        {
+          "from": "\"Type your own answer\"",
+          "to": "\"输入自定义回答\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Previous value\"",
+          "to": "title:\"上一个值\"",
+          "count": 3
+        },
+        {
+          "from": "title:\"Select variant\"",
+          "to": "title:\"选择模型变体\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Editor context\"",
+          "to": "title:\"编辑器上下文\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Image previews\"",
+          "to": "title:\"图片预览\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Leader timeout\"",
+          "to": "title:\"组合键超时\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Could not refresh \"",
+          "to": "F(\"无法刷新 \"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous field\"",
+          "to": "title:\"上一个字段\"",
+          "count": 4
+        },
+        {
+          "from": "title:\"Scroll to code\"",
+          "to": "title:\"滚动到代码\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next Go option\"",
+          "to": "title:\"下一个 Go 方案\"",
+          "count": 3
+        },
+        {
+          "from": "F(\"Free limit reached\"",
+          "to": "F(\"免费用量已达上限\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous shell\"",
+          "to": "title:\"上一个 Shell\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" No shell commands\"",
+          "to": "F(\" 没有 Shell 命令\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Close composer\"",
+          "to": "title:\"关闭输入区\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Export session\"",
+          "to": "title:\"导出会话\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Queued prompts\"",
+          "to": "title:\"消息队列\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Half page down\"",
+          "to": "title:\"向下半页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Rename session\"",
+          "to": "title:\"重命名会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Switch session\"",
+          "to": "title:\"切换会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Favorite cycle\"",
+          "to": "title:\"循环切换收藏模型\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Integration\"",
+          "to": "category:\"集成\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Toggle console\"",
+          "to": "title:\"切换控制台\"",
+          "count": 1
+        },
+        {
+          "from": "} / Worktrees`:\"Open\"",
+          "to": "} / 工作树`:\"打开\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Appearance\"",
+          "to": "category:\"外观\"",
+          "count": 3
+        },
+        {
+          "from": "title:\"Tool grouping\"",
+          "to": "title:\"工具分组\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Notifications\"",
+          "to": "title:\"通知\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy behavior\"",
+          "to": "title:\"复制行为\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Submit prompt\"",
+          "to": "title:\"发送消息\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scroll review\"",
+          "to": "title:\"滚动查看\"",
+          "count": 4
+        },
+        {
+          "from": "title:\"Select answer\"",
+          "to": "title:\"选择回答\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Toggle answer\"",
+          "to": "title:\"切换回答选中状态\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous page\"",
+          "to": "title:\"上一页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"\\u2713 copied\"",
+          "to": "title:\"✓ 已复制\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Next subagent\"",
+          "to": "title:\"下一个子代理\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next terminal\"",
+          "to": "title:\"下一个终端\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Close sidebar\"",
+          "to": "title:\"关闭侧栏\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"First message\"",
+          "to": "title:\"第一条消息\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" \\xB7 interrupted\"",
+          "to": "F(\" · 已中断\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Compaction queued\"",
+          "to": "F(\"上下文压缩已加入队列\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Pending steer\"",
+          "to": "title:\"待处理的方向调整\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Move to queue\"",
+          "to": "title:\"移到队列\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Background\"",
+          "to": "children:\"后台\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Clear session\"",
+          "to": "title:\"清空会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Variant cycle\"",
+          "to": "title:\"循环切换模型变体\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Open settings\"",
+          "to": "title:\"打开设置\"",
+          "count": 1
+        },
+        {
+          "from": "return\"Select model\"",
+          "to": "return\"选择模型\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Suggested\"",
+          "to": "category:\"推荐\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"OpenCode crashed\"",
+          "to": "F(\"OpenCode 崩溃\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Connected\"",
+          "to": "children:\"已连接\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Single patch\"",
+          "to": "title:\"单文件补丁\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scroll speed\"",
+          "to": "title:\"滚动速度\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Acceleration\"",
+          "to": "title:\"滚动加速\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Large pastes\"",
+          "to": "title:\"长文本粘贴\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Window title\"",
+          "to": "title:\"窗口标题\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Select agent\"",
+          "to": "title:\"选择代理\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"New worktree\"",
+          "to": "title:\"新建工作树\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"new worktree\"",
+          "to": "title:\"新建工作树\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Autocomplete\"",
+          "to": "group:\"自动补全\"",
+          "count": 7
+        },
+        {
+          "from": "title:\"Clear prompt\"",
+          "to": "title:\"清空输入\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Queue prompt\"",
+          "to": "title:\"将消息加入队列\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Stash prompt\"",
+          "to": "title:\"暂存输入\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"recent\"",
+          "to": "description:\"最近使用\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Dismiss form\"",
+          "to": "title:\"关闭表单\"",
+          "count": 4
+        },
+        {
+          "from": "title:\"Full session\"",
+          "to": "title:\"完整会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Fork session\"",
+          "to": "title:\"派生会话\"",
+          "count": 3
+        },
+        {
+          "from": "title:\"Previous tab\"",
+          "to": "title:\"上一个标签页\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"save to file\"",
+          "to": "title:\"保存到文件\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Save to file\"",
+          "to": "title:\"保存到文件\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Include thinking\"",
+          "to": "F(\"包含思考过程\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Half page up\"",
+          "to": "title:\"向上半页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Last message\"",
+          "to": "title:\"最后一条消息\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next message\"",
+          "to": "title:\"下一条消息\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"New terminal\"",
+          "to": "title:\"新建终端\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Switch model\"",
+          "to": "title:\"切换模型\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Switch agent\"",
+          "to": "title:\"切换代理\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Switch theme\"",
+          "to": "title:\"切换主题\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Exit the app\"",
+          "to": "title:\"退出应用\"",
+          "count": 1
+        },
+        {
+          "from": "\"No sessions found\"",
+          "to": "\"未找到会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"New designs\"",
+          "to": "title:\"新版界面\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Experiments\"",
+          "to": "title:\"实验功能\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Experiments\"",
+          "to": "group:\"实验功能\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Free models\"",
+          "to": "title:\"免费模型\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Permissions\"",
+          "to": "title:\"权限\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Terminal\"",
+          "to": "category:\"终端\"",
+          "count": 2
+        },
+        {
+          "from": "category:\"Sessions\"",
+          "to": "category:\"会话\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Projects\"",
+          "to": "category:\"项目\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No skills found\"",
+          "to": "F(\"未找到技能\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Open editor\"",
+          "to": "title:\"打开编辑器\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Submit form\"",
+          "to": "title:\"提交表单\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next answer\"",
+          "to": "title:\"下一个回答\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Scroll down\"",
+          "to": "title:\"向下滚动\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy output\"",
+          "to": "title:\"复制输出\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"copy output\"",
+          "to": "title:\"复制输出\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"\\u2190 Edit\"",
+          "to": "label:\"← 编辑\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"# Questions\"",
+          "to": "title:\"# 问题\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"New session\"",
+          "to": "title:\"新建会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Model cycle\"",
+          "to": "title:\"循环切换模型\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"MCP servers\"",
+          "to": "title:\"MCP 服务器\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Agent cycle\"",
+          "to": "title:\"循环切换代理\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"View status\"",
+          "to": "title:\"查看状态\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Pair device\"",
+          "to": "title:\"配对设备\"",
+          "count": 1
+        },
+        {
+          "from": "St===ie?\"Today\":St",
+          "to": "St===ie?\"今天\":new Date(We.time.updated).toLocaleDateString(\"zh-CN\")",
+          "count": 1
+        },
+        {
+          "from": "\"Fix broken tests\"",
+          "to": "\"修复失败的测试\"",
+          "count": 1
+        },
+        {
+          "from": "Ask anything\\u2026",
+          "to": "输入你的问题…",
+          "count": 1
+        },
+        {
+          "from": ")),\"Recent\"),we=Uo",
+          "to": ")),\"最近使用\"),we=Uo",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next value\"",
+          "to": "title:\"下一个值\"",
+          "count": 3
+        },
+        {
+          "from": "label:\"Last error\"",
+          "to": "label:\"最近错误\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No MCP servers\"",
+          "to": "F(\"没有 MCP 服务器\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Color mode\"",
+          "to": "title:\"颜色模式\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Animations\"",
+          "to": "title:\"动画\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Session\"",
+          "to": "category:\"会话\"",
+          "count": 26
+        },
+        {
+          "from": "title:\"Indicators\"",
+          "to": "title:\"状态指示\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Session ID\"",
+          "to": "label:\"会话 ID\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Close help\"",
+          "to": "title:\"关闭帮助\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Stash list\"",
+          "to": "title:\"查看暂存列表\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Shell mode\"",
+          "to": "title:\"Shell 模式\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"(new worktree)\"",
+          "to": "F(\"（新工作树）\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next field\"",
+          "to": "title:\"下一个字段\"",
+          "count": 4
+        },
+        {
+          "from": "title:\"Next shell\"",
+          "to": "title:\"下一个 Shell\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Options\"",
+          "to": "category:\"选项\"",
+          "count": 3
+        },
+        {
+          "from": "F(\" \\xB7 latest: \"",
+          "to": "F(\" · 最新：\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" likely cache \"",
+          "to": "F(\" 可能缓存 \"",
+          "count": 1
+        },
+        {
+          "from": "F(\" \\xB7 attempt \"",
+          "to": "F(\" · 重试第 \"",
+          "count": 1
+        },
+        {
+          "from": "children:\"execute\"",
+          "to": "children:\"执行\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"View usage\"",
+          "to": "title:\"查看用量\"",
+          "count": 1
+        },
+        {
+          "from": "l(lr,qe),l(zt,s(C",
+          "to": "l(lr,()=>((value)=>{const labels={\"submit\":\"提交\",\"continue\":\"继续\",\"I finished\":\"我已完成\",\"open link\":\"打开链接\",\"done\":\"完成\",\"edit\":\"编辑\",\"toggle\":\"切换\",\"confirm\":\"确认\",\"save\":\"保存\",\"choose\":\"选择\",\"next\":\"下一项\",\"acknowledge\":\"我已完成\",\"open URL\":\"打开网址\",\"close\":\"关闭\",\"dismiss\":\"关闭\"};return Object.hasOwn(labels,value)?labels[value]:value})(qe())),l(zt,s(C",
+          "count": 1
+        },
+        {
+          "from": "te(Z,\"Favorites\")",
+          "to": "te(Z,\"收藏\")",
+          "count": 1
+        },
+        {
+          "from": "\"Search sessions\"",
+          "to": "\"搜索会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"TUI tools\"",
+          "to": "title:\"终端界面工具\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Server\"",
+          "to": "children:\"服务器\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Reconnect\"",
+          "to": "label:\"重新连接\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scrollbar\"",
+          "to": "title:\"滚动条\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Verbosity\"",
+          "to": "title:\"详细程度\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"File tree\"",
+          "to": "title:\"文件树\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Alerts\"",
+          "to": "category:\"提醒\"",
+          "count": 4
+        },
+        {
+          "from": "title:\"pin/unpin\"",
+          "to": "title:\"固定或取消固定\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Prompt\"",
+          "to": "category:\"输入\"",
+          "count": 10
+        },
+        {
+          "from": "title:\"Stash pop\"",
+          "to": "title:\"恢复暂存输入\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy link\"",
+          "to": "title:\"复制链接\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scroll up\"",
+          "to": "title:\"向上滚动\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next page\"",
+          "to": "title:\"下一页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy code\"",
+          "to": "title:\"复制代码\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"copy code\"",
+          "to": "title:\"复制代码\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"open link\"",
+          "to": "title:\"打开链接\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Subagents\"",
+          "to": "label:\"子代理\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"interrupt\"",
+          "to": "label:\"中断\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Terminals\"",
+          "to": "label:\"终端\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Include tools\"",
+          "to": "F(\"包含工具记录\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"copy path\"",
+          "to": "title:\"复制路径\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Page down\"",
+          "to": "title:\"向下翻页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Line down\"",
+          "to": "title:\"向下一行\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" cached \\xB7 \"",
+          "to": "F(\" 缓存 · \"",
+          "count": 1
+        },
+        {
+          "from": "category:\"System\"",
+          "to": "category:\"系统\"",
+          "count": 23
+        },
+        {
+          "from": "title:\"Close tab\"",
+          "to": "title:\"关闭标签页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Open docs\"",
+          "to": "title:\"打开文档\"",
+          "count": 1
+        },
+        {
+          "from": "pending:\"Notice\"",
+          "to": "pending:\"提示\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Theme\"",
+          "to": "children:\"主题\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Tools\"",
+          "to": "children:\"工具\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Thinking\"",
+          "to": "title:\"思考过程\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Markdown\"",
+          "to": "title:\"Markdown 显示\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Diffs\"",
+          "to": "category:\"差异\"",
+          "count": 4
+        },
+        {
+          "from": "title:\"Wrapping\"",
+          "to": "title:\"自动换行\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Input\"",
+          "to": "category:\"输入\"",
+          "count": 7
+        },
+        {
+          "from": "category:\"Debug\"",
+          "to": "category:\"调试\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Settings\"",
+          "to": "title:\"设置\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Settings\"",
+          "to": "group:\"设置\"",
+          "count": 2
+        },
+        {
+          "from": "label:\"Terminal\"",
+          "to": "label:\"终端\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Sessions\"",
+          "to": "title:\"会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Commands\"",
+          "to": "title:\"命令\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Terminal\"",
+          "to": "title:\"终端\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Timeline\"",
+          "to": "title:\"时间线\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Composer\"",
+          "to": "group:\"输入区\"",
+          "count": 16
+        },
+        {
+          "from": "F(\"Shell output\"",
+          "to": "F(\"Shell 输出\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next tab\"",
+          "to": "title:\"下一个标签页\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Sanitize\"",
+          "to": "title:\"清除敏感信息\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Agent\"",
+          "to": "category:\"代理\"",
+          "count": 12
+        },
+        {
+          "from": "label:\"Version\"",
+          "to": "label:\"版本\"",
+          "count": 2
+        },
+        {
+          "from": "label:\"Address\"",
+          "to": "label:\"地址\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Experiments\"",
+          "to": "F(\"实验功能\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Default\"",
+          "to": "title:\"默认\"",
+          "count": 1
+        },
+        {
+          "from": "text:\"No limit\"",
+          "to": "text:\"无限制\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" MCP server\"",
+          "to": "F(\" MCP 服务器\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Sidebar\"",
+          "to": "title:\"侧栏\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Tabs\"",
+          "to": "category:\"标签页\"",
+          "count": 4
+        },
+        {
+          "from": "F(\"This device\"",
+          "to": "F(\"此设备\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Restart\"",
+          "to": "label:\"重启\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Execute\"",
+          "to": "group:\"执行\"",
+          "count": 8
+        },
+        {
+          "from": "title:\"Jump to\"",
+          "to": "title:\"跳转到\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Session\"",
+          "to": "group:\"会话\"",
+          "count": 36
+        },
+        {
+          "from": "title:\"Page up\"",
+          "to": "title:\"向上翻页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Line up\"",
+          "to": "title:\"向上一行\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"# Wrote\"",
+          "to": "label:\"# 已写入\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"# Todos\"",
+          "to": "title:\"# 待办事项\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"change\"",
+          "to": "title:\"更改\"",
+          "count": 2
+        },
+        {
+          "from": "label:\"Status\"",
+          "to": "label:\"状态\"",
+          "count": 2
+        },
+        {
+          "from": "label:\"Memory\"",
+          "to": "label:\"内存\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Status\"",
+          "to": "title:\"状态\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Themes\"",
+          "to": "title:\"主题\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Layout\"",
+          "to": "title:\"布局\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Sounds\"",
+          "to": "title:\"声音\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Volume\"",
+          "to": "title:\"音量\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Dialog\"",
+          "to": "group:\"弹窗\"",
+          "count": 27
+        },
+        {
+          "from": "title:\"switch\"",
+          "to": "title:\"切换\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"delete\"",
+          "to": "title:\"删除\"",
+          "count": 3
+        },
+        {
+          "from": "title:\"rename\"",
+          "to": "title:\"重命名\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Skills\"",
+          "to": "title:\"技能\"",
+          "count": 2
+        },
+        {
+          "from": "group:\"Prompt\"",
+          "to": "group:\"输入\"",
+          "count": 7
+        },
+        {
+          "from": "F(\"No preview\"",
+          "to": "F(\"没有预览\"",
+          "count": 2
+        },
+        {
+          "from": "F(\" completed\"",
+          "to": "F(\" 已完成\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Update\"",
+          "to": "label:\"更新\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"scroll\"",
+          "to": "title:\"滚动\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Revert\"",
+          "to": "title:\"还原\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" subagents\"",
+          "to": "F(\" 个子代理\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"follow\"",
+          "to": "title:\"跟随\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"output\"",
+          "to": "label:\"输出\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Format\"",
+          "to": "title:\"格式\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Export as:\"",
+          "to": "F(\"导出为：\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"copied\"",
+          "to": "title:\"已复制\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" new \\xB7 \"",
+          "to": "F(\" 新增 · \"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Delete\"",
+          "to": "title:\"删除\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"UI\"",
+          "to": "children:\"界面\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Theme\"",
+          "to": "title:\"主题\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scope\"",
+          "to": "title:\"范围\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Mouse\"",
+          "to": "title:\"鼠标\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Model\"",
+          "to": "label:\"模型\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Debug\"",
+          "to": "title:\"调试\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" minutes.\"",
+          "to": "F(\" 分钟。\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Stash\"",
+          "to": "title:\"暂存\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Paste\"",
+          "to": "title:\"粘贴\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Shell\"",
+          "to": "group:\"Shell\"",
+          "count": 6
+        },
+        {
+          "from": "label:\"Shell\"",
+          "to": "label:\"Shell\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Tools\"",
+          "to": "title:\"工具\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Saved to \"",
+          "to": "F(\"已保存到 \"",
+          "count": 1
+        },
+        {
+          "from": "title:\"steer\"",
+          "to": "title:\"调整方向\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" reverted\"",
+          "to": "F(\" 已撤销\"",
+          "count": 1
+        },
+        {
+          "from": "\"No matches\"",
+          "to": "\"没有匹配结果\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Loop\"",
+          "to": "label:\"事件循环\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Name\"",
+          "to": "label:\"名称\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Mode\"",
+          "to": "label:\"模式\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Mode\"",
+          "to": "title:\"模式\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Date\"",
+          "to": "label:\"日期\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Pair\"",
+          "to": "title:\"配对\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Help\"",
+          "to": "title:\"帮助\"",
+          "count": 2
+        },
+        {
+          "from": "F(\"Sessions\"",
+          "to": "F(\"会话\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Form\"",
+          "to": "group:\"表单\"",
+          "count": 31
+        },
+        {
+          "from": "label:\"Skip\"",
+          "to": "label:\"跳过\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"back\"",
+          "to": "title:\"返回\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Copy\"",
+          "to": "title:\"复制\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Fork\"",
+          "to": "title:\"派生\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"open\"",
+          "to": "title:\"打开\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"copy\"",
+          "to": "title:\"复制\"",
+          "count": 2
+        },
+        {
+          "from": "label:\"kill\"",
+          "to": "label:\"终止\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"undo\"",
+          "to": "title:\"撤销\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Redo\"",
+          "to": "title:\"重做\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" message\"",
+          "to": "F(\" 条消息\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"output: \"",
+          "to": "F(\"输出：\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"go home\"",
+          "to": "F(\"返回首页\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" Server\"",
+          "to": "F(\" 服务器\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"TPS\"",
+          "to": "title:\"每秒令牌数\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"execute\"",
+          "to": "F(\"执行\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Error: \"",
+          "to": "F(\"错误：\"",
+          "count": 2
+        },
+        {
+          "from": "F(\" skill \"",
+          "to": "F(\" 技能 \"",
+          "count": 1
+        },
+        {
+          "from": "F(\" queued\"",
+          "to": "F(\" 已排队\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Error [\"",
+          "to": "F(\"错误 [\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Render\"",
+          "to": "F(\"渲染\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"OS\"",
+          "to": "label:\"操作系统\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"ok\"",
+          "to": "title:\"确定\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Press \"",
+          "to": "F(\"按 \"",
+          "count": 2
+        },
+        {
+          "from": "F(\"Submit\"",
+          "to": "F(\"提交\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"select\"",
+          "to": "F(\"选择\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"scroll\"",
+          "to": "F(\"滚动\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Output\"",
+          "to": "F(\"输出\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Export\"",
+          "to": "F(\"导出\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" total\"",
+          "to": "F(\" 总计\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Tokens\"",
+          "to": "F(\"令牌\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" tok/s\"",
+          "to": "F(\" 令牌/秒\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Theme\"",
+          "to": "F(\"主题\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Tools\"",
+          "to": "F(\"工具\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Links\"",
+          "to": "F(\"链接\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" more\"",
+          "to": "F(\" 项更多\"",
+          "count": 2
+        },
+        {
+          "from": "F(\"Close\"",
+          "to": "F(\"关闭\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" line\"",
+          "to": "F(\" 行\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"auto\"",
+          "to": "F(\"自动\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"copy\"",
+          "to": "F(\"复制\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Code\"",
+          "to": "F(\"代码\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" No \"",
+          "to": "F(\" 无 \"",
+          "count": 1
+        },
+        {
+          "from": "F(\"tabs\"",
+          "to": "F(\"标签页\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Copy\"",
+          "to": "F(\"复制\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" UI\"",
+          "to": "F(\" 界面\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"ok\"",
+          "to": "F(\"确定\"",
+          "count": 1
+        }
+      ],
+      "chunk-fvkdscp7.js": [
+        {
+          "from": "B()?\"Review\":`${Math.min(S().field+1,t.request.fields.length)}/${t.request.fields.length}`",
+          "to": "B()?\"检查回答\":`${Math.min(S().field+1,t.request.fields.length)}/${t.request.fields.length}`",
+          "count": 1
+        },
+        {
+          "from": "\"\\u2191\\u2193 select   enter choose   tab next   esc dismiss\"",
+          "to": "\"↑↓ 选择   enter 确认   tab 下一项   esc 关闭\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"compact older session context to free space\"",
+          "to": "description:\"压缩较早的会话内容以腾出上下文空间\"",
+          "count": 1
+        },
+        {
+          "from": "\"up/down select   enter choose   tab next   esc dismiss\"",
+          "to": "\"up/down 选择   enter 确认   tab 下一项   esc 关闭\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"This request remains pending until you dismiss it.\"",
+          "to": "F(\"此请求会一直等待，直到你关闭它。\"",
+          "count": 1
+        },
+        {
+          "from": "Field type ${n.type} is not supported in Mini yet.",
+          "to": "精简模式暂不支持 ${n.type} 类型的字段。",
+          "count": 1
+        },
+        {
+          "from": "description:\"configure Mini transcript output\"",
+          "to": "description:\"配置精简模式会话输出\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"compose in your external editor\"",
+          "to": "description:\"使用外部编辑器撰写\"",
+          "count": 1
+        },
+        {
+          "from": "f.cost?.input===0&&i.id===\"opencode\"?\"Free\"",
+          "to": "f.cost?.input===0&&i.id===\"opencode\"?\"免费\"",
+          "count": 1
+        },
+        {
+          "from": "Ask anything, / for commands, @ for context",
+          "to": "输入你的问题，/ 查看命令，@ 添加上下文",
+          "count": 1
+        },
+        {
+          "from": "o()<24?\"Permission\":\"Permission required\"",
+          "to": "o()<24?\"权限\":\"需要授权\"",
+          "count": 1
+        },
+        {
+          "from": "?\"current\":void 0,footerTone:\"selection\"",
+          "to": "?\"当前\":void 0,footerTone:\"selection\"",
+          "count": 3
+        },
+        {
+          "from": "F(\"Tell OpenCode what to do differently\"",
+          "to": "F(\"告诉 OpenCode 接下来应该怎么做\"",
+          "count": 1
+        },
+        {
+          "from": "o()<24?\"Reject\":\"Reject permission\"",
+          "to": "o()<24?\"拒绝\":\"拒绝授权\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous autocomplete item\"",
+          "to": "title:\"上一项自动补全\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Complete autocomplete item\"",
+          "to": "title:\"应用补全项\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"start a new session\"",
+          "to": "description:\"新建会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Select autocomplete item\"",
+          "to": "title:\"选择补全项\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous prompt history\"",
+          "to": "title:\"上一条输入历史\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"View pending prompts\"",
+          "to": "display:\"查看待发送消息\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Switch model variant\"",
+          "to": "display:\"切换模型变体\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next autocomplete item\"",
+          "to": "title:\"下一项自动补全\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Delete pending prompt\"",
+          "to": "title:\"删除待发送消息\"",
+          "count": 1
+        },
+        {
+          "from": "\"enter submit   esc dismiss\"",
+          "to": "\"enter 提交   esc 关闭\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No subagent activity yet\"",
+          "to": "F(\"暂无子代理活动\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"close OpenCode\"",
+          "to": "description:\"退出 OpenCode\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Clear prompt or exit\"",
+          "to": "title:\"清空输入或退出\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Open command palette\"",
+          "to": "title:\"打开命令面板\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Background subagents\"",
+          "to": "title:\"后台子代理\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"View pending prompts\"",
+          "to": "title:\"查看待发送消息\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next prompt history\"",
+          "to": "title:\"下一条输入历史\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Cycle model variant\"",
+          "to": "title:\"循环切换模型变体\"",
+          "count": 1
+        },
+        {
+          "from": "\"enter save   esc dismiss\"",
+          "to": "\"enter 保存   esc 关闭\"",
+          "count": 1
+        },
+        {
+          "from": "enter ${w()}   esc dismiss",
+          "to": "enter ${((value)=>{const labels={\"submit\":\"提交\",\"continue\":\"继续\",\"I finished\":\"我已完成\",\"open link\":\"打开链接\",\"done\":\"完成\",\"edit\":\"编辑\",\"toggle\":\"切换\",\"confirm\":\"确认\",\"save\":\"保存\",\"choose\":\"选择\",\"next\":\"下一项\",\"acknowledge\":\"我已完成\",\"open URL\":\"打开网址\",\"close\":\"关闭\",\"dismiss\":\"关闭\"};return Object.hasOwn(labels,value)?labels[value]:value})(w())}   esc 关闭",
+          "count": 1
+        },
+        {
+          "from": "empty:\"No subagents found\"",
+          "to": "empty:\"没有可用的子代理\"",
+          "count": 1
+        },
+        {
+          "from": "empty:\"No pending prompts\"",
+          "to": "empty:\"没有待发送消息\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Interrupt subagent\"",
+          "to": "title:\"中断子代理\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Compact session\"",
+          "to": "display:\"压缩会话上下文\"",
+          "count": 1
+        },
+        {
+          "from": "empty:\"No settings found\"",
+          "to": "empty:\"没有匹配的设置\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Interrupt session\"",
+          "to": "title:\"中断会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Hide autocomplete\"",
+          "to": "title:\"隐藏自动补全\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"View subagents\"",
+          "to": "display:\"查看子代理\"",
+          "count": 1
+        },
+        {
+          "from": "empty:\"No results found\"",
+          "to": "empty:\"没有匹配结果\"",
+          "count": 2
+        },
+        {
+          "from": "display:\"Footer details\"",
+          "to": "display:\"底栏详情\"",
+          "count": 1
+        },
+        {
+          "from": "hint:\"left/right change\"",
+          "to": "hint:\"左右键切换\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Type your own answer\"",
+          "to": "F(\"输入自定义回答\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Variant cycle\"",
+          "to": "display:\"循环切换模型变体\"",
+          "count": 1
+        },
+        {
+          "from": "empty:\"No agents found\"",
+          "to": "empty:\"没有可用的代理\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Monochrome UI\"",
+          "to": "display:\"单色界面\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Select subagent\"",
+          "to": "title:\"选择子代理\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Pending prompts\"",
+          "to": "title:\"待发送消息\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Exit shell mode\"",
+          "to": "title:\"退出 Shell 模式\"",
+          "count": 2
+        },
+        {
+          "from": "display:\"Switch agent\"",
+          "to": "display:\"切换代理\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Switch model\"",
+          "to": "display:\"切换模型\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Clear screen\"",
+          "to": "display:\"清屏\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Turn summary\"",
+          "to": "display:\"本轮摘要\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Work spinner\"",
+          "to": "display:\"运行指示动画\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Select variant\"",
+          "to": "title:\"选择模型变体\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"View subagents\"",
+          "to": "title:\"查看子代理\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Open editor\"",
+          "to": "display:\"打开编辑器\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Show status\"",
+          "to": "display:\"显示状态\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"New session\"",
+          "to": "display:\"新建会话\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Transcript\"",
+          "to": "category:\"会话记录\"",
+          "count": 5
+        },
+        {
+          "from": "return\"Always allow\"",
+          "to": "return\"始终允许\"",
+          "count": 1
+        },
+        {
+          "from": "placeholder:\"Search\"",
+          "to": "placeholder:\"搜索\"",
+          "count": 7
+        },
+        {
+          "from": "title:\"Select agent\"",
+          "to": "title:\"选择代理\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Select model\"",
+          "to": "title:\"选择模型\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"pgup/pgdn scroll\"",
+          "to": "F(\"pgup/pgdn 滚动\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Queue prompt\"",
+          "to": "title:\"将消息加入队列\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Autocomplete\"",
+          "to": "group:\"自动补全\"",
+          "count": 5
+        },
+        {
+          "from": "F(\"No diff provided\"",
+          "to": "F(\"没有差异内容\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Clear screen\"",
+          "to": "title:\"清屏\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Verbosity\"",
+          "to": "display:\"详细程度\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Terminal\"",
+          "to": "category:\"终端\"",
+          "count": 4
+        },
+        {
+          "from": "title:\"Open editor\"",
+          "to": "title:\"打开编辑器\"",
+          "count": 1
+        },
+        {
+          "from": "\"pgup/pgdn scroll\"",
+          "to": "\"pgup/pgdn 滚动\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Session\"",
+          "to": "category:\"会话\"",
+          "count": 5
+        },
+        {
+          "from": "display:\"Settings\"",
+          "to": "display:\"设置\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Thinking\"",
+          "to": "display:\"思考过程\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Shell mode\"",
+          "to": "title:\"Shell 模式\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"System\"",
+          "to": "category:\"系统\"",
+          "count": 3
+        },
+        {
+          "from": "display:\"Default\"",
+          "to": "display:\"默认\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Agent\"",
+          "to": "category:\"代理\"",
+          "count": 5
+        },
+        {
+          "from": "title:\"Commands\"",
+          "to": "title:\"命令\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Splash\"",
+          "to": "display:\"启动画面\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Settings\"",
+          "to": "title:\"设置\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Tools\"",
+          "to": "display:\"工具\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Shell\"",
+          "to": "display:\"Shell\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"# Questions\"",
+          "to": "F(\"# 问题\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Session\"",
+          "to": "group:\"会话\"",
+          "count": 4
+        },
+        {
+          "from": "F(\"esc dismiss\"",
+          "to": "F(\"esc 关闭\"",
+          "count": 1
+        },
+        {
+          "from": "display:\"Exit\"",
+          "to": "display:\"退出\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Prompt\"",
+          "to": "group:\"输入\"",
+          "count": 13
+        },
+        {
+          "from": "F(\" interrupt\"",
+          "to": "F(\" 中断\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No preview\"",
+          "to": "F(\"没有预览\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" confirm  \"",
+          "to": "F(\" 确认  \"",
+          "count": 1
+        },
+        {
+          "from": "label:\"normal\"",
+          "to": "label:\"普通\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"System\"",
+          "to": "group:\"系统\"",
+          "count": 1
+        },
+        {
+          "from": "\"esc dismiss\"",
+          "to": "\"esc 关闭\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"tab next \"",
+          "to": "F(\"tab 下一项 \"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Paste\"",
+          "to": "title:\"粘贴\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" select  \"",
+          "to": "F(\" 选择  \"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Model\"",
+          "to": "group:\"模型\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Undo\"",
+          "to": "title:\"撤销\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"esc back\"",
+          "to": "F(\"esc 返回\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"menu\"",
+          "to": "label:\"菜单\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"# Todos\"",
+          "to": "F(\"# 待办事项\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" scroll\"",
+          "to": "F(\" 滚动\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"bg\"",
+          "to": "label:\"后台\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" line\"",
+          "to": "F(\" 行\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" more\"",
+          "to": "F(\" 项更多\"",
+          "count": 1
+        }
+      ],
+      "chunk-15f4c5jr.js": [
+        {
+          "from": "new Intl.DateTimeFormat(\"en-US\",{month:\"short\",year:\"numeric\"}).formatRange(new Date(t.stats.range.from)",
+          "to": "new Intl.DateTimeFormat(\"zh-CN\",{month:\"short\",year:\"numeric\"}).formatRange(new Date(t.stats.range.from)",
+          "count": 1
+        },
+        {
+          "from": "if(!L)return\"toggle\";return t.plugins.registered().find((Y)=>Y.id===L.id)?.active?\"disable\":\"enable\"",
+          "to": "if(!L)return\"切换\";return t.plugins.registered().find((Y)=>Y.id===L.id)?.active?\"禁用\":\"启用\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Committed comparison unavailable without base metadata. Choose a base branch from Diff source.\"",
+          "to": "F(\"缺少基准信息，无法比较提交。请在差异来源中选择基准分支。\"",
+          "count": 1
+        },
+        {
+          "from": "Plugin: ${pn(Y(),t.context)}\nStatus: failed\nRuntime: ${Y().runtime}\nSource: ${ba(Y(),t.context)}",
+          "to": "插件：${pn(Y(),t.context)}\n状态：失败\n运行环境：${Y().runtime}\n来源：${ba(Y(),t.context)}",
+          "count": 1
+        },
+        {
+          "from": "description:\"One-shot answer from the session's context without adding to the conversation\"",
+          "to": "description:\"根据当前会话上下文回答临时问题，回答独立显示\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Connect from 75+ providers to use other models, including Claude, GPT, Gemini etc\"",
+          "to": "F(\"连接其他供应商，使用 Claude、GPT、Gemini 等模型\"",
+          "count": 1
+        },
+        {
+          "from": "return\"goal paused\";if(t.status===\"complete\")return\"goal met\";return\"goal\"",
+          "to": "return\"目标已暂停\";if(t.status===\"complete\")return\"目标已达成\";return\"目标\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"OpenCode includes free models so you can start immediately.\"",
+          "to": "F(\"OpenCode 提供免费模型，可以直接开始使用。\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"No goal is set. Start one with /goal <objective>.\"",
+          "to": "message:\"尚未设置目标。使用 /goal <objective> 创建目标。\"",
+          "count": 1
+        },
+        {
+          "from": "(I.label.length<=I.span*2?I.label:\"\").padEnd(I.span*2)",
+          "to": "(()=>{const label=((value)=>{const labels={\"Jan\":\"1月\",\"Feb\":\"2月\",\"Mar\":\"3月\",\"Apr\":\"4月\",\"May\":\"5月\",\"Jun\":\"6月\",\"Jul\":\"7月\",\"Aug\":\"8月\",\"Sep\":\"9月\",\"Oct\":\"10月\",\"Nov\":\"11月\",\"Dec\":\"12月\"};return Object.hasOwn(labels,value)?labels[value]:value})(I.label);const cells=Jt(label);return cells<=I.span*2?label+\" \".repeat(I.span*2-cells):\" \".repeat(I.span*2)})()",
+          "count": 1
+        },
+        {
+          "from": "F(\"Could not load stats. Reopen /stats to try again.\"",
+          "to": "F(\"无法加载统计。请重新打开 /stats 后重试。\"",
+          "count": 1
+        },
+        {
+          "from": "title:i()?\"checking for updates\":\"check for updates\"",
+          "to": "title:i()?\"正在检查更新\":\"检查更新\"",
+          "count": 1
+        },
+        {
+          "from": "`${Y().runtime===\"tui\"?\"TUI\":\"Server\"} plugin error`",
+          "to": "`${Y().runtime===\"tui\"?\"终端界面\":\"服务器\"}插件错误`",
+          "count": 1
+        },
+        {
+          "from": "...jn(t)===\"active\"?[]:[jn(t)],...dd(t)?[\"local\"]",
+          "to": "...jn(t)===\"active\"?[]:[((value)=>{const labels={\"active\":\"已启用\",\"inactive\":\"未启用\",\"failed\":\"失败\",\"pending\":\"处理中\",\"disabled\":\"已禁用\",\"unsupported\":\"不支持\"};return Object.hasOwn(labels,value)?labels[value]:value})(jn(t))],...dd(t)?[\"本地\"]",
+          "count": 1
+        },
+        {
+          "from": "title:\"Toggle diff viewer split or unified view\"",
+          "to": "title:\"切换并排或统一差异视图\"",
+          "count": 1
+        },
+        {
+          "from": "placeholder:\"Search local and remote branches\"",
+          "to": "placeholder:\"搜索本地和远程分支\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Toggle selected diff file reviewed\"",
+          "to": "title:\"切换当前文件的已审查状态\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Show more diff viewer shortcuts\"",
+          "to": "title:\"显示更多差异视图快捷键\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Toggle diff viewer full screen\"",
+          "to": "title:\"切换差异视图全屏\"",
+          "count": 1
+        },
+        {
+          "from": "title:`${p()?\"hide\":\"show\"} internal`",
+          "to": "title:p()?\"隐藏内置插件\":\"显示内置插件\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Branch + local changes\"",
+          "to": "description:\"分支和本地改动\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Toggle diff viewer file tree\"",
+          "to": "title:\"切换差异视图文件树\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Go to the start of the diff\"",
+          "to": "title:\"跳到差异开头\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"File menu (heading or tree)\"",
+          "to": "label:\"文件菜单（标题或文件树）\"",
+          "count": 1
+        },
+        {
+          "from": "I.label===\"best streak\"?\" days\":\"\"",
+          "to": "I.label===\"best streak\"?\" 天\":\"\"",
+          "count": 1
+        },
+        {
+          "from": "each:[\"M\",\"T\",\"W\",\"T\",\"F\",\"S\",\"S\"]",
+          "to": "each:[\"一\",\"二\",\"三\",\"四\",\"五\",\"六\",\"日\"]",
+          "count": 1
+        },
+        {
+          "from": "F(\"Remembered until the TUI exits\"",
+          "to": "F(\"在终端界面退出前保持有效\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Jump to previous diff hunk\"",
+          "to": "title:\"跳到上一处差异\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Jump to previous diff file\"",
+          "to": "title:\"跳到上一个变更文件\"",
+          "count": 1
+        },
+        {
+          "from": "`Failed to update plugin ${Y.id}`",
+          "to": "`更新插件失败：${Y.id}`",
+          "count": 1
+        },
+        {
+          "from": "title:\"Failed to update the goal\"",
+          "to": "title:\"更新目标失败\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Branch commits only\"",
+          "to": "description:\"仅分支提交\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Latest session turn\"",
+          "to": "description:\"会话中最近一轮\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Go to the end of the diff\"",
+          "to": "title:\"跳到差异末尾\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Switch diff viewer source\"",
+          "to": "title:\"切换差异来源\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Missing session directory\"",
+          "to": "title:\"会话目录缺失\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"Local changes only\"",
+          "to": "description:\"仅本地改动\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Toggle single patch view\"",
+          "to": "title:\"切换单文件差异视图\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Full screen / split view\"",
+          "to": "label:\"全屏／分屏\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scroll down half a page\"",
+          "to": "title:\"向下滚动半页\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"All files / single file\"",
+          "to": "label:\"全部文件／单个文件\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Toggle internal plugins\"",
+          "to": "title:\"切换内置插件\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Open a session first\"",
+          "to": "message:\"请先打开会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Jump to next diff hunk\"",
+          "to": "title:\"跳到下一处差异\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Jump to next diff file\"",
+          "to": "title:\"跳到下一个变更文件\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Next / previous change\"",
+          "to": "label:\"下一处／上一处改动\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Gathering your stats\\u2026\"",
+          "to": "F(\"正在统计用量…\"",
+          "count": 1
+        },
+        {
+          "from": "...Fo(t)?[\"update available\"]",
+          "to": "...Fo(t)?[\"有可用更新\"]",
+          "count": 1
+        },
+        {
+          "from": "title:\"Move diff viewer down\"",
+          "to": "title:\"向下移动差异视图\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Page diff viewer down\"",
+          "to": "title:\"差异视图向下翻页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scroll up half a page\"",
+          "to": "title:\"向上滚动半页\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Show / hide file tree\"",
+          "to": "label:\"显示／隐藏文件树\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Ask a side question\"",
+          "to": "title:\"提一个临时问题\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Move diff viewer up\"",
+          "to": "title:\"向上移动差异视图\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Page diff viewer up\"",
+          "to": "title:\"差异视图向上翻页\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Half page down / up\"",
+          "to": "label:\"向下／向上半页\"",
+          "count": 1
+        },
+        {
+          "from": "\"Base or diff unavailable\"",
+          "to": "\"无法获取基准或差异\"",
+          "count": 1
+        },
+        {
+          "from": "placeholder:\"Ask anything\"",
+          "to": "placeholder:\"输入你的问题\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Could not decode image\"",
+          "to": "F(\"无法解码图片\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Switch diff source\"",
+          "to": "label:\"切换差异来源\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Request permission\"",
+          "to": "title:\"请求授权\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Release highlights\"",
+          "to": "title:\"版本亮点\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Close diff viewer\"",
+          "to": "title:\"关闭差异查看器\"",
+          "count": 2
+        },
+        {
+          "from": "label:\"Close diff viewer\"",
+          "to": "label:\"关闭差异查看器\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Could not load image\"",
+          "to": "F(\"无法加载图片\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Open diff viewer\"",
+          "to": "title:\"打开差异查看器\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Usage statistics\"",
+          "to": "title:\"用量统计\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Close file menu\"",
+          "to": "title:\"关闭文件菜单\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Loading image\\u2026\"",
+          "to": "F(\"正在加载图片…\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Split / unified\"",
+          "to": "label:\"并排／统一\"",
+          "count": 1
+        },
+        {
+          "from": "\"Resolving diff\\u2026\"",
+          "to": "\"正在解析差异…\"",
+          "count": 1
+        },
+        {
+          "from": "\"Unknown plugin error\"",
+          "to": "\"未知插件错误\"",
+          "count": 1
+        },
+        {
+          "from": "l(X,()=>I.label),b((_)",
+          "to": "l(X,()=>((value)=>{const labels={\"tokens\":\"令牌\",\"best streak\":\"最长连续使用\",\"active days\":\"活跃天数\",\"sessions\":\"会话数\"};return Object.hasOwn(labels,value)?labels[value]:value})(I.label)),b((_)",
+          "count": 1
+        },
+        {
+          "from": "F(\"Loading diff\\u2026\"",
+          "to": "F(\"正在加载差异…\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No changes to show\"",
+          "to": "F(\"没有可显示的改动\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Page down / up\"",
+          "to": "label:\"向下／向上翻页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Diff shortcuts\"",
+          "to": "title:\"差异快捷键\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Session failed\"",
+          "to": "title:\"会话失败\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Ask a question\"",
+          "to": "title:\"提问\"",
+          "count": 1
+        },
+        {
+          "from": "l(X,I+\"   \"),l(U,s(tt",
+          "to": "l(X,I+\"  \"),l(U,s(tt",
+          "count": 1
+        },
+        {
+          "from": "F(\"Connect provider\")",
+          "to": "F(\"连接模型供应商\")",
+          "count": 1
+        },
+        {
+          "from": "title:\"\\u2713 copied\"",
+          "to": "title:\"✓ 已复制\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"copy response\"",
+          "to": "title:\"复制回答\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Connecting\"",
+          "to": "children:\"正在连接\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Previous file\"",
+          "to": "label:\"上一个文件\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Connected\"",
+          "to": "children:\"已连接\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Click to enlarge\"",
+          "to": "F(\"点击放大\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"First / last\"",
+          "to": "label:\"首项／末项\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous tab\"",
+          "to": "title:\"上一个标签页\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"opencode / stats\"",
+          "to": "F(\"OpenCode / 用量统计\"",
+          "count": 1
+        },
+        {
+          "from": "\"Base not reported\"",
+          "to": "\"未提供基准\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy answer\"",
+          "to": "title:\"复制回答\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Resume goal\"",
+          "to": "title:\"继续目标\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Getting started\"",
+          "to": "F(\"开始使用\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Disabled\"",
+          "to": "children:\"已禁用\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Uncommitted\"",
+          "to": "label:\"未提交\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Base branch\"",
+          "to": "title:\"基准分支\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Diff source\"",
+          "to": "title:\"差异来源\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Pause goal\"",
+          "to": "title:\"暂停目标\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Clear goal\"",
+          "to": "title:\"清除目标\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Sign in\"",
+          "to": "children:\"登录\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"view error\"",
+          "to": "title:\"查看错误\"",
+          "count": 2
+        },
+        {
+          "from": "t.source??\"Files\"",
+          "to": "t.source??\"文件\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Committed\"",
+          "to": "label:\"已提交\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Last turn\"",
+          "to": "label:\"最近一轮\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Next file\"",
+          "to": "label:\"下一个文件\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Down / up\"",
+          "to": "label:\"向下／向上\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Close tab\"",
+          "to": "title:\"关闭标签页\"",
+          "count": 1
+        },
+        {
+          "from": "children:\"Error\"",
+          "to": "children:\"错误\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next tab\"",
+          "to": "title:\"下一个标签页\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Session\"",
+          "to": "group:\"会话\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" remaining)\"",
+          "to": "F(\" 剩余）\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"see all\"",
+          "to": "label:\"查看全部\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Plugins\"",
+          "to": "title:\"插件\"",
+          "count": 2
+        },
+        {
+          "from": "group:\"Plugins\"",
+          "to": "group:\"插件\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Add tab\"",
+          "to": "title:\"添加标签页\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"confirm\"",
+          "to": "label:\"确认\"",
+          "count": 1
+        },
+        {
+          "from": "`vs ${P.name}`",
+          "to": "`与 ${P.name} 比较`",
+          "count": 1
+        },
+        {
+          "from": "group:\"Dialog\"",
+          "to": "group:\"弹窗\"",
+          "count": 4
+        },
+        {
+          "from": "title:\"scroll\"",
+          "to": "title:\"滚动\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"resume\"",
+          "to": "title:\"继续\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" remaining\"",
+          "to": "F(\" 剩余\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Review\"",
+          "to": "title:\"审查\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scroll\"",
+          "to": "title:\"滚动\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"update\"",
+          "to": "title:\"更新\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"System\"",
+          "to": "group:\"系统\"",
+          "count": 2
+        },
+        {
+          "from": "label:\"select\"",
+          "to": "label:\"选择\"",
+          "count": 4
+        },
+        {
+          "from": "F(\"Your last \"",
+          "to": "F(\"最近 \"",
+          "count": 1
+        },
+        {
+          "from": "F(\"commands\")",
+          "to": "F(\"命令\")",
+          "count": 1
+        },
+        {
+          "from": "title:\"pause\"",
+          "to": "title:\"暂停\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"clear\"",
+          "to": "title:\"清空\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"pause\"",
+          "to": "label:\"暂停\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"clear\"",
+          "to": "label:\"清空\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Debug\"",
+          "to": "group:\"调试\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"copy\"",
+          "to": "title:\"复制\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Goal\"",
+          "to": "title:\"目标\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No files\"",
+          "to": "F(\"没有文件\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Base\"",
+          "to": "title:\"基准\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"View\"",
+          "to": "title:\"视图\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"back\"",
+          "to": "label:\"返回\"",
+          "count": 7
+        },
+        {
+          "from": "title:\"Tabs\"",
+          "to": "title:\"标签页\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"open\"",
+          "to": "label:\"打开\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"back\"",
+          "to": "title:\"返回\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"agents\")",
+          "to": "F(\"代理\")",
+          "count": 1
+        },
+        {
+          "from": "F(\" plugin\"",
+          "to": "F(\" 插件\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" failed\"",
+          "to": "F(\" 失败\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Context\"",
+          "to": "F(\"上下文\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" tokens\"",
+          "to": "F(\" 令牌\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" active\"",
+          "to": "F(\" 活动\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"All\"",
+          "to": "label:\"全部\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"% used\"",
+          "to": "F(\"% 已用\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" spent\"",
+          "to": "F(\" 已用\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"TOKENS\"",
+          "to": "F(\"令牌\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" weeks\"",
+          "to": "F(\" 周\"",
+          "count": 1
+        },
+        {
+          "from": "\"vs HEAD\"",
+          "to": "\"与 HEAD 比较\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Limit\"",
+          "to": "F(\"上限\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Image\"",
+          "to": "F(\"图片\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Todo\"",
+          "to": "F(\"待办\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"You\"",
+          "to": "F(\"你\"",
+          "count": 1
+        }
+      ],
+      "chunk-mdnw6rat.js": [
+        {
+          "from": "if(M===\"connected\")return\"disconnect\";if(M===\"failed\")return\"retry\";if(M===\"needs_auth\")return\"sign in\";return\"connect\"",
+          "to": "if(M===\"connected\")return\"断开\";if(M===\"failed\")return\"重试\";if(M===\"needs_auth\")return\"登录\";return\"连接\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No limits apply to your models. Paid models stop only if the workspace runs out of credits.\"",
+          "to": "F(\"你的模型没有用量限制，付费模型会在工作区额度用完时停止。\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Sign in to OpenCode Console with /connect to see your workspace's usage limits.\"",
+          "to": "F(\"使用 /connect 登录 OpenCode Console，查看工作区的用量限制。\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"This worktree has file changes. Do you want to delete it anyway?\"",
+          "to": "message:\"此工作树有文件改动，仍要删除吗？\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Could not open the browser. Copy the URL and continue manually.\"",
+          "to": "message:\"无法打开浏览器。请复制网址并手动继续。\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Or turn on Extra Usage on your Go page to keep going now:\"",
+          "to": "label:\"你也可以在 Go 页面开启额外用量后继续：\"",
+          "count": 1
+        },
+        {
+          "from": "return\"Connecting \\u2026\";if(t.status.status===\"connected\")",
+          "to": "return\"正在连接…\";if(t.status.status===\"connected\")",
+          "count": 1
+        },
+        {
+          "from": "Status: ${G().status.status}\nConfiguration: mcp.servers.",
+          "to": "状态：${((value)=>{const labels={\"connected\":\"已连接\",\"pending\":\"连接中\",\"failed\":\"连接失败\",\"needs_auth\":\"需要认证\",\"disabled\":\"已禁用\"};return Object.hasOwn(labels,value)?labels[value]:value})(G().status.status)}\n配置：mcp.servers.",
+          "count": 1
+        },
+        {
+          "from": "title:f.type===\"key\"?f.label??\"API key\":f.label,value:",
+          "to": "title:((value)=>{const labels={\"API key\":\"API 密钥\",\"Manually enter API Key\":\"手动输入 API 密钥\",\"Bedrock API key\":\"Bedrock API 密钥\",\"AWS profile (SSO or named profile)\":\"AWS 配置（SSO 或命名配置）\",\"AWS profile\":\"AWS 配置\",\"Profile name\":\"配置名称\",\"Enter Azure Resource Name\":\"输入 Azure 资源名称\",\"Microsoft Entra ID (Azure CLI)\":\"Microsoft Entra ID（Azure CLI）\",\"Azure resource\":\"Azure 资源\",\"Enter the name of your Azure OpenAI or AI Services resource.\":\"输入 Azure OpenAI 或 AI Services 的资源名称。\",\"Sign in with ChatGPT\":\"使用 ChatGPT 登录\",\"Claude Code login (claude auth login)\":\"使用 Claude Code 登录（claude auth login）\",\"Enter your Cloudflare Account ID\":\"输入 Cloudflare 账号 ID\",\"e.g. 1234567890abcdef1234567890abcdef\":\"例如 1234567890abcdef1234567890abcdef\",\"Enter your Cloudflare AI Gateway ID\":\"输入 Cloudflare AI Gateway ID\",\"e.g. my-gateway\":\"例如 my-gateway\",\"Gateway API token\":\"网关 API 令牌\",\"Login with DigitalOcean\":\"使用 DigitalOcean 登录\",\"Login with GitHub Copilot\":\"使用 GitHub Copilot 登录\",\"Select GitHub deployment type\":\"选择 GitHub 部署类型\",\"Public\":\"公共服务\",\"Data residency or self-hosted\":\"数据驻留或自行部署\",\"Enter your GitHub Enterprise URL or domain\":\"输入 GitHub Enterprise 网址或域名\",\"company.ghe.com or https://company.ghe.com\":\"例如 company.ghe.com 或 https://company.ghe.com\",\"Login with GitLab (OAuth)\":\"使用 GitLab 登录（OAuth）\",\"GitLab instance URL\":\"GitLab 实例网址\",\"Leave the default to use gitlab.com, or enter your self-managed GitLab URL.\":\"保留默认值以使用 gitlab.com，或输入自行部署的 GitLab 网址。\",\"Google Cloud credentials (gcloud auth or environment)\":\"Google Cloud 凭据（gcloud auth 或环境变量）\",\"Google Cloud project\":\"Google Cloud 项目\",\"Project ID\":\"项目 ID\",\"Location\":\"区域\",\"Codex browser (legacy)\":\"Codex 浏览器登录（旧方式）\",\"Codex device code (legacy)\":\"Codex 设备码登录（旧方式）\",\"Snowflake account\":\"Snowflake 账号\",\"Paste PAT or bearer token\":\"粘贴 PAT 或 Bearer 令牌\",\"Login with Snowflake (External Browser)\":\"使用外部浏览器登录 Snowflake\",\"Snowflake role (optional)\":\"Snowflake 角色（可选）\",\"OpenCode Console account\":\"OpenCode Console 账号\",\"API key (service account)\":\"API 密钥（服务账号）\",\"Login with Poe (browser)\":\"使用浏览器登录 Poe\",\"SuperGrok Subscription\":\"SuperGrok 订阅\",\"Log in\":\"登录\",\"Private Key\":\"私钥\",\"Public Key\":\"公钥\",\"Token\":\"令牌\",\"Organization\":\"组织\",\"Organization ID\":\"组织 ID\",\"Account ID\":\"账号 ID\",\"Endpoint\":\"服务地址\",\"Region\":\"区域\",\"Username\":\"用户名\",\"Password\":\"密码\",\"Client ID\":\"客户端 ID\",\"Client secret\":\"客户端密钥\",\"Optional\":\"可选\",\"Required\":\"必填\",\"Continue\":\"继续\",\"Submit\":\"提交\",\"Cancel\":\"取消\",\"Yes\":\"是\",\"No\":\"否\",\"Select an option\":\"选择一个选项\",\"Type your own answer\":\"输入自定义回答\",\"Enter a value\":\"输入值\"};return Object.hasOwn(labels,value)?labels[value]:value})(f.type===\"key\"?f.label??\"API key\":f.label),value:",
+          "count": 1
+        },
+        {
+          "from": "F(\"Choose another directory to continue this session.\"",
+          "to": "F(\"选择其他目录以继续此会话。\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Add a favorite model to use this shortcut\"",
+          "to": "message:\"收藏一个模型后即可使用此快捷键\"",
+          "count": 1
+        },
+        {
+          "from": "if(t.status.status===\"failed\")return\"Failed !\"",
+          "to": "if(t.status.status===\"failed\")return\"失败 !\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Waiting for command to finish\\u2026\"",
+          "to": "message:\"正在等待命令完成…\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Unable to determine current project\"",
+          "to": "message:\"无法确定当前项目\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Close and reopen Worktrees to try again.\"",
+          "to": "F(\"关闭并重新打开工作树面板后重试。\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"to another working directory\"",
+          "to": "description:\"移动到另一个工作目录\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Waiting for authorization\\u2026\"",
+          "to": "message:\"正在等待授权…\"",
+          "count": 1
+        },
+        {
+          "from": "oe.root.directory===_e?\"Current\":\"Other\"",
+          "to": "oe.root.directory===_e?\"当前\":\"其他\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Session ID copied to clipboard\"",
+          "to": "message:\"会话 ID 已复制到剪贴板\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Tell OpenCode what to do differently\"",
+          "to": "F(\"告诉 OpenCode 接下来应该怎么做\"",
+          "count": 1
+        },
+        {
+          "from": "l(D,()=>g.title),e(A,\"wrapMode\",\"word\")",
+          "to": "l(D,()=>((value)=>{const labels={\"Worktree and Shell Mode Shortcuts\":\"工作树和 Shell 模式快捷键\",\"Send Quotes From the Comment Popup\":\"从评论弹窗发送引用\",\"Percentage Compaction Buffer\":\"按百分比预留压缩缓冲区\"};return Object.hasOwn(labels,value)?labels[value]:value})(g.title)),e(A,\"wrapMode\",\"word\")",
+          "count": 1
+        },
+        {
+          "from": "message:\"Run /plugins to view details.\"",
+          "to": "message:\"运行 /plugins 查看详情。\"",
+          "count": 1
+        },
+        {
+          "from": "g=\"Services\";if(h.id in Iy)g=\"Popular\"",
+          "to": "g=\"服务\";if(h.id in Iy)g=\"常用服务\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Starting authorization\\u2026\"",
+          "to": "message:\"正在启动授权…\"",
+          "count": 1
+        },
+        {
+          "from": "titlePlaceholder:\"Search MCP servers\"",
+          "to": "titlePlaceholder:\"搜索 MCP 服务器\"",
+          "count": 1
+        },
+        {
+          "from": "description:\"in system file manager\"",
+          "to": "description:\"在系统文件管理器中打开\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Confirm permission rejection\"",
+          "to": "title:\"确认拒绝授权\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Toggle permission fullscreen\"",
+          "to": "title:\"切换权限面板全屏\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Session location unavailable\"",
+          "to": "title:\"会话目录不可用\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Cancel permission rejection\"",
+          "to": "title:\"取消拒绝授权\"",
+          "count": 2
+        },
+        {
+          "from": "o.expanded?\"minimize\":\"fullscreen\"",
+          "to": "o.expanded?\"缩小\":\"全屏\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy authorization details\"",
+          "to": "title:\"复制授权信息\"",
+          "count": 1
+        },
+        {
+          "from": "placeholder:\"Type your own answer\"",
+          "to": "placeholder:\"输入自定义回答\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Path copied to clipboard\"",
+          "to": "message:\"路径已复制到剪贴板\"",
+          "count": 1
+        },
+        {
+          "from": "Integration: ${G().integrationID}",
+          "to": "集成：${G().integrationID}",
+          "count": 1
+        },
+        {
+          "from": "title:\"Failed to delete worktree\"",
+          "to": "title:\"删除工作树失败\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Creating workspace failed\"",
+          "to": "title:\"创建工作区失败\"",
+          "count": 2
+        },
+        {
+          "from": "message:\"Starting command\\u2026\"",
+          "to": "message:\"正在启动命令…\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Authentication expired\"",
+          "to": "message:\"身份验证已过期\"",
+          "count": 1
+        },
+        {
+          "from": "placeholder:\"Authorization code\"",
+          "to": "placeholder:\"授权码\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Confirm dialog selection\"",
+          "to": "title:\"确认弹窗选择\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Authorization expired\"",
+          "to": "message:\"授权已过期\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"No recently closed tabs\"",
+          "to": "title:\"没有最近关闭的标签页\"",
+          "count": 1
+        },
+        {
+          "from": "choicesLabel:\"Recovery actions\"",
+          "to": "choicesLabel:\"恢复操作\"",
+          "count": 1
+        },
+        {
+          "from": "\"Unknown MCP connection error\"",
+          "to": "\"未知 MCP 连接错误\"",
+          "count": 1
+        },
+        {
+          "from": "Reject permission: ${t.action}",
+          "to": "拒绝授权：${t.action}",
+          "count": 1
+        },
+        {
+          "from": "title:\"Connect an integration\"",
+          "to": "title:\"连接服务\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Open authorization URL\"",
+          "to": "title:\"打开授权网址\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous dialog option\"",
+          "to": "title:\"上一个选项\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Failed to move session\"",
+          "to": "title:\"移动会话失败\"",
+          "count": 1
+        },
+        {
+          "from": "Connect ${t.integration.name}",
+          "to": "连接 ${t.integration.name}",
+          "count": 1
+        },
+        {
+          "from": "message:\"Copied to clipboard\"",
+          "to": "message:\"已复制到剪贴板\"",
+          "count": 2
+        },
+        {
+          "from": "F(\"No integrations available\"",
+          "to": "F(\"没有可用的集成\"",
+          "count": 1
+        },
+        {
+          "from": "category:\"Connected accounts\"",
+          "to": "category:\"已连接的账号\"",
+          "count": 1
+        },
+        {
+          "from": "Permission required: ${r??t}",
+          "to": "需要授权：${r??t}",
+          "count": 1
+        },
+        {
+          "from": "title:\"Submit dialog prompt\"",
+          "to": "title:\"提交弹窗输入\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Type your own answer\"",
+          "to": "title:\"输入自定义回答\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Opening link\\u2026\"",
+          "to": "message:\"正在打开链接…\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Recently closed tabs\"",
+          "to": "title:\"最近关闭的标签页\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Could not load worktrees\"",
+          "to": "F(\"无法加载工作树\"",
+          "count": 1
+        },
+        {
+          "from": "placeholder:\"Search models\"",
+          "to": "placeholder:\"搜索模型\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Usage limit reached\"",
+          "to": "title:\"用量已达上限\"",
+          "count": 1
+        },
+        {
+          "from": "placeholder:\"Session title\"",
+          "to": "placeholder:\"会话标题\"",
+          "count": 1
+        },
+        {
+          "from": "placeholder:\"Worktree name\"",
+          "to": "placeholder:\"工作树名称\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Loading worktrees\\u2026\"",
+          "to": "F(\"正在加载工作树…\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Permission required\"",
+          "to": "title:\"需要授权\"",
+          "count": 1
+        },
+        {
+          "from": "What's new in ${t.version}",
+          "to": "${t.version} 版本亮点",
+          "count": 1
+        },
+        {
+          "from": "placeholder:\"Account name\"",
+          "to": "placeholder:\"账号名称\"",
+          "count": 1
+        },
+        {
+          "from": "message:\"Connecting\\u2026\"",
+          "to": "message:\"正在连接…\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next dialog option\"",
+          "to": "title:\"下一个选项\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No worktrees available\"",
+          "to": "F(\"没有可用的工作树\"",
+          "count": 1
+        },
+        {
+          "from": "`MCP server: ${G().name}`",
+          "to": "`MCP 服务器：${G().name}`",
+          "count": 1
+        },
+        {
+          "from": "??t.placeholder??\"Search\"",
+          "to": "??t.placeholder??\"搜索\"",
+          "count": 1
+        },
+        {
+          "from": "\"Sign in required \\u2192\"",
+          "to": "\"需要登录 →\"",
+          "count": 3
+        },
+        {
+          "from": "F(\"No integrations found\"",
+          "to": "F(\"未找到集成\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Investigate error\"",
+          "to": "title:\"调查错误\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Working directory\"",
+          "to": "title:\"工作目录\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Rejection actions\"",
+          "to": "label:\"拒绝操作\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Confirm rejection\"",
+          "to": "label:\"确认拒绝\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Reject permission\"",
+          "to": "title:\"拒绝授权\"",
+          "count": 2
+        },
+        {
+          "from": "return g.body.split(\"`\")",
+          "to": "return (((value)=>{const labels={\"Worktree and Shell Mode Shortcuts\":\"macOS 按 `⌘⌥O`，Windows 和 Linux 按 `Ctrl+Alt+O` 选择工作树。按 `⌘⌥B` 或 `Ctrl+Alt+B` 选择基准分支。按 `⌘⇧X` 或 `Ctrl+Shift+X` 切换输入框的 Shell 模式。\",\"Send Quotes From the Comment Popup\":\"在引用弹窗按住 `⌘` 或 `Ctrl`，确认按钮会变为发送。也可按 `⌘Enter` 或 `Ctrl+Enter`，只发送引用和评论，保留输入框中的其他内容。\",\"Percentage Compaction Buffer\":\"在 `opencode.json` 中设置 `\\\"compaction\\\": { \\\"buffer\\\": \\\"20%\\\" }`，就能按比例为不同模型预留上下文。仍可按令牌数量设置缓冲区。\"};return Object.hasOwn(labels,value)?labels[value]:void 0})(g.title)??g.body).split(\"`\")",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous section\"",
+          "to": "title:\"上一组\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Close highlights\"",
+          "to": "title:\"关闭版本亮点\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scroll to bottom\"",
+          "to": "title:\"滚动到底部\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Delete worktree?\"",
+          "to": "title:\"删除工作树？\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Rejection reason\"",
+          "to": "label:\"拒绝原因\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Cancel rejection\"",
+          "to": "label:\"取消拒绝\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Session recovery\"",
+          "to": "group:\"会话恢复\"",
+          "count": 1
+        },
+        {
+          "from": "function IA(t,r,n,i,o){",
+          "to": "function IA(t,r,n,i,o){r={...r,label:((value)=>{const labels={\"API key\":\"API 密钥\",\"Manually enter API Key\":\"手动输入 API 密钥\",\"Bedrock API key\":\"Bedrock API 密钥\",\"AWS profile (SSO or named profile)\":\"AWS 配置（SSO 或命名配置）\",\"AWS profile\":\"AWS 配置\",\"Profile name\":\"配置名称\",\"Enter Azure Resource Name\":\"输入 Azure 资源名称\",\"Microsoft Entra ID (Azure CLI)\":\"Microsoft Entra ID（Azure CLI）\",\"Azure resource\":\"Azure 资源\",\"Enter the name of your Azure OpenAI or AI Services resource.\":\"输入 Azure OpenAI 或 AI Services 的资源名称。\",\"Sign in with ChatGPT\":\"使用 ChatGPT 登录\",\"Claude Code login (claude auth login)\":\"使用 Claude Code 登录（claude auth login）\",\"Enter your Cloudflare Account ID\":\"输入 Cloudflare 账号 ID\",\"e.g. 1234567890abcdef1234567890abcdef\":\"例如 1234567890abcdef1234567890abcdef\",\"Enter your Cloudflare AI Gateway ID\":\"输入 Cloudflare AI Gateway ID\",\"e.g. my-gateway\":\"例如 my-gateway\",\"Gateway API token\":\"网关 API 令牌\",\"Login with DigitalOcean\":\"使用 DigitalOcean 登录\",\"Login with GitHub Copilot\":\"使用 GitHub Copilot 登录\",\"Select GitHub deployment type\":\"选择 GitHub 部署类型\",\"Public\":\"公共服务\",\"Data residency or self-hosted\":\"数据驻留或自行部署\",\"Enter your GitHub Enterprise URL or domain\":\"输入 GitHub Enterprise 网址或域名\",\"company.ghe.com or https://company.ghe.com\":\"例如 company.ghe.com 或 https://company.ghe.com\",\"Login with GitLab (OAuth)\":\"使用 GitLab 登录（OAuth）\",\"GitLab instance URL\":\"GitLab 实例网址\",\"Leave the default to use gitlab.com, or enter your self-managed GitLab URL.\":\"保留默认值以使用 gitlab.com，或输入自行部署的 GitLab 网址。\",\"Google Cloud credentials (gcloud auth or environment)\":\"Google Cloud 凭据（gcloud auth 或环境变量）\",\"Google Cloud project\":\"Google Cloud 项目\",\"Project ID\":\"项目 ID\",\"Location\":\"区域\",\"Codex browser (legacy)\":\"Codex 浏览器登录（旧方式）\",\"Codex device code (legacy)\":\"Codex 设备码登录（旧方式）\",\"Snowflake account\":\"Snowflake 账号\",\"Paste PAT or bearer token\":\"粘贴 PAT 或 Bearer 令牌\",\"Login with Snowflake (External Browser)\":\"使用外部浏览器登录 Snowflake\",\"Snowflake role (optional)\":\"Snowflake 角色（可选）\",\"OpenCode Console account\":\"OpenCode Console 账号\",\"API key (service account)\":\"API 密钥（服务账号）\",\"Login with Poe (browser)\":\"使用浏览器登录 Poe\",\"SuperGrok Subscription\":\"SuperGrok 订阅\",\"Log in\":\"登录\",\"Private Key\":\"私钥\",\"Public Key\":\"公钥\",\"Token\":\"令牌\",\"Organization\":\"组织\",\"Organization ID\":\"组织 ID\",\"Account ID\":\"账号 ID\",\"Endpoint\":\"服务地址\",\"Region\":\"区域\",\"Username\":\"用户名\",\"Password\":\"密码\",\"Client ID\":\"客户端 ID\",\"Client secret\":\"客户端密钥\",\"Optional\":\"可选\",\"Required\":\"必填\",\"Continue\":\"继续\",\"Submit\":\"提交\",\"Cancel\":\"取消\",\"Yes\":\"是\",\"No\":\"否\",\"Select an option\":\"选择一个选项\",\"Type your own answer\":\"输入自定义回答\",\"Enter a value\":\"输入值\"};return Object.hasOwn(labels,value)?labels[value]:value})(r.label),form:r.form?.map(field=>({...field,title:((value)=>{const labels={\"API key\":\"API 密钥\",\"Manually enter API Key\":\"手动输入 API 密钥\",\"Bedrock API key\":\"Bedrock API 密钥\",\"AWS profile (SSO or named profile)\":\"AWS 配置（SSO 或命名配置）\",\"AWS profile\":\"AWS 配置\",\"Profile name\":\"配置名称\",\"Enter Azure Resource Name\":\"输入 Azure 资源名称\",\"Microsoft Entra ID (Azure CLI)\":\"Microsoft Entra ID（Azure CLI）\",\"Azure resource\":\"Azure 资源\",\"Enter the name of your Azure OpenAI or AI Services resource.\":\"输入 Azure OpenAI 或 AI Services 的资源名称。\",\"Sign in with ChatGPT\":\"使用 ChatGPT 登录\",\"Claude Code login (claude auth login)\":\"使用 Claude Code 登录（claude auth login）\",\"Enter your Cloudflare Account ID\":\"输入 Cloudflare 账号 ID\",\"e.g. 1234567890abcdef1234567890abcdef\":\"例如 1234567890abcdef1234567890abcdef\",\"Enter your Cloudflare AI Gateway ID\":\"输入 Cloudflare AI Gateway ID\",\"e.g. my-gateway\":\"例如 my-gateway\",\"Gateway API token\":\"网关 API 令牌\",\"Login with DigitalOcean\":\"使用 DigitalOcean 登录\",\"Login with GitHub Copilot\":\"使用 GitHub Copilot 登录\",\"Select GitHub deployment type\":\"选择 GitHub 部署类型\",\"Public\":\"公共服务\",\"Data residency or self-hosted\":\"数据驻留或自行部署\",\"Enter your GitHub Enterprise URL or domain\":\"输入 GitHub Enterprise 网址或域名\",\"company.ghe.com or https://company.ghe.com\":\"例如 company.ghe.com 或 https://company.ghe.com\",\"Login with GitLab (OAuth)\":\"使用 GitLab 登录（OAuth）\",\"GitLab instance URL\":\"GitLab 实例网址\",\"Leave the default to use gitlab.com, or enter your self-managed GitLab URL.\":\"保留默认值以使用 gitlab.com，或输入自行部署的 GitLab 网址。\",\"Google Cloud credentials (gcloud auth or environment)\":\"Google Cloud 凭据（gcloud auth 或环境变量）\",\"Google Cloud project\":\"Google Cloud 项目\",\"Project ID\":\"项目 ID\",\"Location\":\"区域\",\"Codex browser (legacy)\":\"Codex 浏览器登录（旧方式）\",\"Codex device code (legacy)\":\"Codex 设备码登录（旧方式）\",\"Snowflake account\":\"Snowflake 账号\",\"Paste PAT or bearer token\":\"粘贴 PAT 或 Bearer 令牌\",\"Login with Snowflake (External Browser)\":\"使用外部浏览器登录 Snowflake\",\"Snowflake role (optional)\":\"Snowflake 角色（可选）\",\"OpenCode Console account\":\"OpenCode Console 账号\",\"API key (service account)\":\"API 密钥（服务账号）\",\"Login with Poe (browser)\":\"使用浏览器登录 Poe\",\"SuperGrok Subscription\":\"SuperGrok 订阅\",\"Log in\":\"登录\",\"Private Key\":\"私钥\",\"Public Key\":\"公钥\",\"Token\":\"令牌\",\"Organization\":\"组织\",\"Organization ID\":\"组织 ID\",\"Account ID\":\"账号 ID\",\"Endpoint\":\"服务地址\",\"Region\":\"区域\",\"Username\":\"用户名\",\"Password\":\"密码\",\"Client ID\":\"客户端 ID\",\"Client secret\":\"客户端密钥\",\"Optional\":\"可选\",\"Required\":\"必填\",\"Continue\":\"继续\",\"Submit\":\"提交\",\"Cancel\":\"取消\",\"Yes\":\"是\",\"No\":\"否\",\"Select an option\":\"选择一个选项\",\"Type your own answer\":\"输入自定义回答\",\"Enter a value\":\"输入值\"};return Object.hasOwn(labels,value)?labels[value]:value})(field.title),description:((value)=>{const labels={\"API key\":\"API 密钥\",\"Manually enter API Key\":\"手动输入 API 密钥\",\"Bedrock API key\":\"Bedrock API 密钥\",\"AWS profile (SSO or named profile)\":\"AWS 配置（SSO 或命名配置）\",\"AWS profile\":\"AWS 配置\",\"Profile name\":\"配置名称\",\"Enter Azure Resource Name\":\"输入 Azure 资源名称\",\"Microsoft Entra ID (Azure CLI)\":\"Microsoft Entra ID（Azure CLI）\",\"Azure resource\":\"Azure 资源\",\"Enter the name of your Azure OpenAI or AI Services resource.\":\"输入 Azure OpenAI 或 AI Services 的资源名称。\",\"Sign in with ChatGPT\":\"使用 ChatGPT 登录\",\"Claude Code login (claude auth login)\":\"使用 Claude Code 登录（claude auth login）\",\"Enter your Cloudflare Account ID\":\"输入 Cloudflare 账号 ID\",\"e.g. 1234567890abcdef1234567890abcdef\":\"例如 1234567890abcdef1234567890abcdef\",\"Enter your Cloudflare AI Gateway ID\":\"输入 Cloudflare AI Gateway ID\",\"e.g. my-gateway\":\"例如 my-gateway\",\"Gateway API token\":\"网关 API 令牌\",\"Login with DigitalOcean\":\"使用 DigitalOcean 登录\",\"Login with GitHub Copilot\":\"使用 GitHub Copilot 登录\",\"Select GitHub deployment type\":\"选择 GitHub 部署类型\",\"Public\":\"公共服务\",\"Data residency or self-hosted\":\"数据驻留或自行部署\",\"Enter your GitHub Enterprise URL or domain\":\"输入 GitHub Enterprise 网址或域名\",\"company.ghe.com or https://company.ghe.com\":\"例如 company.ghe.com 或 https://company.ghe.com\",\"Login with GitLab (OAuth)\":\"使用 GitLab 登录（OAuth）\",\"GitLab instance URL\":\"GitLab 实例网址\",\"Leave the default to use gitlab.com, or enter your self-managed GitLab URL.\":\"保留默认值以使用 gitlab.com，或输入自行部署的 GitLab 网址。\",\"Google Cloud credentials (gcloud auth or environment)\":\"Google Cloud 凭据（gcloud auth 或环境变量）\",\"Google Cloud project\":\"Google Cloud 项目\",\"Project ID\":\"项目 ID\",\"Location\":\"区域\",\"Codex browser (legacy)\":\"Codex 浏览器登录（旧方式）\",\"Codex device code (legacy)\":\"Codex 设备码登录（旧方式）\",\"Snowflake account\":\"Snowflake 账号\",\"Paste PAT or bearer token\":\"粘贴 PAT 或 Bearer 令牌\",\"Login with Snowflake (External Browser)\":\"使用外部浏览器登录 Snowflake\",\"Snowflake role (optional)\":\"Snowflake 角色（可选）\",\"OpenCode Console account\":\"OpenCode Console 账号\",\"API key (service account)\":\"API 密钥（服务账号）\",\"Login with Poe (browser)\":\"使用浏览器登录 Poe\",\"SuperGrok Subscription\":\"SuperGrok 订阅\",\"Log in\":\"登录\",\"Private Key\":\"私钥\",\"Public Key\":\"公钥\",\"Token\":\"令牌\",\"Organization\":\"组织\",\"Organization ID\":\"组织 ID\",\"Account ID\":\"账号 ID\",\"Endpoint\":\"服务地址\",\"Region\":\"区域\",\"Username\":\"用户名\",\"Password\":\"密码\",\"Client ID\":\"客户端 ID\",\"Client secret\":\"客户端密钥\",\"Optional\":\"可选\",\"Required\":\"必填\",\"Continue\":\"继续\",\"Submit\":\"提交\",\"Cancel\":\"取消\",\"Yes\":\"是\",\"No\":\"否\",\"Select an option\":\"选择一个选项\",\"Type your own answer\":\"输入自定义回答\",\"Enter a value\":\"输入值\"};return Object.hasOwn(labels,value)?labels[value]:value})(field.description),placeholder:((value)=>{const labels={\"API key\":\"API 密钥\",\"Manually enter API Key\":\"手动输入 API 密钥\",\"Bedrock API key\":\"Bedrock API 密钥\",\"AWS profile (SSO or named profile)\":\"AWS 配置（SSO 或命名配置）\",\"AWS profile\":\"AWS 配置\",\"Profile name\":\"配置名称\",\"Enter Azure Resource Name\":\"输入 Azure 资源名称\",\"Microsoft Entra ID (Azure CLI)\":\"Microsoft Entra ID（Azure CLI）\",\"Azure resource\":\"Azure 资源\",\"Enter the name of your Azure OpenAI or AI Services resource.\":\"输入 Azure OpenAI 或 AI Services 的资源名称。\",\"Sign in with ChatGPT\":\"使用 ChatGPT 登录\",\"Claude Code login (claude auth login)\":\"使用 Claude Code 登录（claude auth login）\",\"Enter your Cloudflare Account ID\":\"输入 Cloudflare 账号 ID\",\"e.g. 1234567890abcdef1234567890abcdef\":\"例如 1234567890abcdef1234567890abcdef\",\"Enter your Cloudflare AI Gateway ID\":\"输入 Cloudflare AI Gateway ID\",\"e.g. my-gateway\":\"例如 my-gateway\",\"Gateway API token\":\"网关 API 令牌\",\"Login with DigitalOcean\":\"使用 DigitalOcean 登录\",\"Login with GitHub Copilot\":\"使用 GitHub Copilot 登录\",\"Select GitHub deployment type\":\"选择 GitHub 部署类型\",\"Public\":\"公共服务\",\"Data residency or self-hosted\":\"数据驻留或自行部署\",\"Enter your GitHub Enterprise URL or domain\":\"输入 GitHub Enterprise 网址或域名\",\"company.ghe.com or https://company.ghe.com\":\"例如 company.ghe.com 或 https://company.ghe.com\",\"Login with GitLab (OAuth)\":\"使用 GitLab 登录（OAuth）\",\"GitLab instance URL\":\"GitLab 实例网址\",\"Leave the default to use gitlab.com, or enter your self-managed GitLab URL.\":\"保留默认值以使用 gitlab.com，或输入自行部署的 GitLab 网址。\",\"Google Cloud credentials (gcloud auth or environment)\":\"Google Cloud 凭据（gcloud auth 或环境变量）\",\"Google Cloud project\":\"Google Cloud 项目\",\"Project ID\":\"项目 ID\",\"Location\":\"区域\",\"Codex browser (legacy)\":\"Codex 浏览器登录（旧方式）\",\"Codex device code (legacy)\":\"Codex 设备码登录（旧方式）\",\"Snowflake account\":\"Snowflake 账号\",\"Paste PAT or bearer token\":\"粘贴 PAT 或 Bearer 令牌\",\"Login with Snowflake (External Browser)\":\"使用外部浏览器登录 Snowflake\",\"Snowflake role (optional)\":\"Snowflake 角色（可选）\",\"OpenCode Console account\":\"OpenCode Console 账号\",\"API key (service account)\":\"API 密钥（服务账号）\",\"Login with Poe (browser)\":\"使用浏览器登录 Poe\",\"SuperGrok Subscription\":\"SuperGrok 订阅\",\"Log in\":\"登录\",\"Private Key\":\"私钥\",\"Public Key\":\"公钥\",\"Token\":\"令牌\",\"Organization\":\"组织\",\"Organization ID\":\"组织 ID\",\"Account ID\":\"账号 ID\",\"Endpoint\":\"服务地址\",\"Region\":\"区域\",\"Username\":\"用户名\",\"Password\":\"密码\",\"Client ID\":\"客户端 ID\",\"Client secret\":\"客户端密钥\",\"Optional\":\"可选\",\"Required\":\"必填\",\"Continue\":\"继续\",\"Submit\":\"提交\",\"Cancel\":\"取消\",\"Yes\":\"是\",\"No\":\"否\",\"Select an option\":\"选择一个选项\",\"Type your own answer\":\"输入自定义回答\",\"Enter a value\":\"输入值\"};return Object.hasOwn(labels,value)?labels[value]:value})(field.placeholder),options:field.options?.map(option=>({...option,label:((value)=>{const labels={\"API key\":\"API 密钥\",\"Manually enter API Key\":\"手动输入 API 密钥\",\"Bedrock API key\":\"Bedrock API 密钥\",\"AWS profile (SSO or named profile)\":\"AWS 配置（SSO 或命名配置）\",\"AWS profile\":\"AWS 配置\",\"Profile name\":\"配置名称\",\"Enter Azure Resource Name\":\"输入 Azure 资源名称\",\"Microsoft Entra ID (Azure CLI)\":\"Microsoft Entra ID（Azure CLI）\",\"Azure resource\":\"Azure 资源\",\"Enter the name of your Azure OpenAI or AI Services resource.\":\"输入 Azure OpenAI 或 AI Services 的资源名称。\",\"Sign in with ChatGPT\":\"使用 ChatGPT 登录\",\"Claude Code login (claude auth login)\":\"使用 Claude Code 登录（claude auth login）\",\"Enter your Cloudflare Account ID\":\"输入 Cloudflare 账号 ID\",\"e.g. 1234567890abcdef1234567890abcdef\":\"例如 1234567890abcdef1234567890abcdef\",\"Enter your Cloudflare AI Gateway ID\":\"输入 Cloudflare AI Gateway ID\",\"e.g. my-gateway\":\"例如 my-gateway\",\"Gateway API token\":\"网关 API 令牌\",\"Login with DigitalOcean\":\"使用 DigitalOcean 登录\",\"Login with GitHub Copilot\":\"使用 GitHub Copilot 登录\",\"Select GitHub deployment type\":\"选择 GitHub 部署类型\",\"Public\":\"公共服务\",\"Data residency or self-hosted\":\"数据驻留或自行部署\",\"Enter your GitHub Enterprise URL or domain\":\"输入 GitHub Enterprise 网址或域名\",\"company.ghe.com or https://company.ghe.com\":\"例如 company.ghe.com 或 https://company.ghe.com\",\"Login with GitLab (OAuth)\":\"使用 GitLab 登录（OAuth）\",\"GitLab instance URL\":\"GitLab 实例网址\",\"Leave the default to use gitlab.com, or enter your self-managed GitLab URL.\":\"保留默认值以使用 gitlab.com，或输入自行部署的 GitLab 网址。\",\"Google Cloud credentials (gcloud auth or environment)\":\"Google Cloud 凭据（gcloud auth 或环境变量）\",\"Google Cloud project\":\"Google Cloud 项目\",\"Project ID\":\"项目 ID\",\"Location\":\"区域\",\"Codex browser (legacy)\":\"Codex 浏览器登录（旧方式）\",\"Codex device code (legacy)\":\"Codex 设备码登录（旧方式）\",\"Snowflake account\":\"Snowflake 账号\",\"Paste PAT or bearer token\":\"粘贴 PAT 或 Bearer 令牌\",\"Login with Snowflake (External Browser)\":\"使用外部浏览器登录 Snowflake\",\"Snowflake role (optional)\":\"Snowflake 角色（可选）\",\"OpenCode Console account\":\"OpenCode Console 账号\",\"API key (service account)\":\"API 密钥（服务账号）\",\"Login with Poe (browser)\":\"使用浏览器登录 Poe\",\"SuperGrok Subscription\":\"SuperGrok 订阅\",\"Log in\":\"登录\",\"Private Key\":\"私钥\",\"Public Key\":\"公钥\",\"Token\":\"令牌\",\"Organization\":\"组织\",\"Organization ID\":\"组织 ID\",\"Account ID\":\"账号 ID\",\"Endpoint\":\"服务地址\",\"Region\":\"区域\",\"Username\":\"用户名\",\"Password\":\"密码\",\"Client ID\":\"客户端 ID\",\"Client secret\":\"客户端密钥\",\"Optional\":\"可选\",\"Required\":\"必填\",\"Continue\":\"继续\",\"Submit\":\"提交\",\"Cancel\":\"取消\",\"Yes\":\"是\",\"No\":\"否\",\"Select an option\":\"选择一个选项\",\"Type your own answer\":\"输入自定义回答\",\"Enter a value\":\"输入值\"};return Object.hasOwn(labels,value)?labels[value]:value})(option.label),description:((value)=>{const labels={\"API key\":\"API 密钥\",\"Manually enter API Key\":\"手动输入 API 密钥\",\"Bedrock API key\":\"Bedrock API 密钥\",\"AWS profile (SSO or named profile)\":\"AWS 配置（SSO 或命名配置）\",\"AWS profile\":\"AWS 配置\",\"Profile name\":\"配置名称\",\"Enter Azure Resource Name\":\"输入 Azure 资源名称\",\"Microsoft Entra ID (Azure CLI)\":\"Microsoft Entra ID（Azure CLI）\",\"Azure resource\":\"Azure 资源\",\"Enter the name of your Azure OpenAI or AI Services resource.\":\"输入 Azure OpenAI 或 AI Services 的资源名称。\",\"Sign in with ChatGPT\":\"使用 ChatGPT 登录\",\"Claude Code login (claude auth login)\":\"使用 Claude Code 登录（claude auth login）\",\"Enter your Cloudflare Account ID\":\"输入 Cloudflare 账号 ID\",\"e.g. 1234567890abcdef1234567890abcdef\":\"例如 1234567890abcdef1234567890abcdef\",\"Enter your Cloudflare AI Gateway ID\":\"输入 Cloudflare AI Gateway ID\",\"e.g. my-gateway\":\"例如 my-gateway\",\"Gateway API token\":\"网关 API 令牌\",\"Login with DigitalOcean\":\"使用 DigitalOcean 登录\",\"Login with GitHub Copilot\":\"使用 GitHub Copilot 登录\",\"Select GitHub deployment type\":\"选择 GitHub 部署类型\",\"Public\":\"公共服务\",\"Data residency or self-hosted\":\"数据驻留或自行部署\",\"Enter your GitHub Enterprise URL or domain\":\"输入 GitHub Enterprise 网址或域名\",\"company.ghe.com or https://company.ghe.com\":\"例如 company.ghe.com 或 https://company.ghe.com\",\"Login with GitLab (OAuth)\":\"使用 GitLab 登录（OAuth）\",\"GitLab instance URL\":\"GitLab 实例网址\",\"Leave the default to use gitlab.com, or enter your self-managed GitLab URL.\":\"保留默认值以使用 gitlab.com，或输入自行部署的 GitLab 网址。\",\"Google Cloud credentials (gcloud auth or environment)\":\"Google Cloud 凭据（gcloud auth 或环境变量）\",\"Google Cloud project\":\"Google Cloud 项目\",\"Project ID\":\"项目 ID\",\"Location\":\"区域\",\"Codex browser (legacy)\":\"Codex 浏览器登录（旧方式）\",\"Codex device code (legacy)\":\"Codex 设备码登录（旧方式）\",\"Snowflake account\":\"Snowflake 账号\",\"Paste PAT or bearer token\":\"粘贴 PAT 或 Bearer 令牌\",\"Login with Snowflake (External Browser)\":\"使用外部浏览器登录 Snowflake\",\"Snowflake role (optional)\":\"Snowflake 角色（可选）\",\"OpenCode Console account\":\"OpenCode Console 账号\",\"API key (service account)\":\"API 密钥（服务账号）\",\"Login with Poe (browser)\":\"使用浏览器登录 Poe\",\"SuperGrok Subscription\":\"SuperGrok 订阅\",\"Log in\":\"登录\",\"Private Key\":\"私钥\",\"Public Key\":\"公钥\",\"Token\":\"令牌\",\"Organization\":\"组织\",\"Organization ID\":\"组织 ID\",\"Account ID\":\"账号 ID\",\"Endpoint\":\"服务地址\",\"Region\":\"区域\",\"Username\":\"用户名\",\"Password\":\"密码\",\"Client ID\":\"客户端 ID\",\"Client secret\":\"客户端密钥\",\"Optional\":\"可选\",\"Required\":\"必填\",\"Continue\":\"继续\",\"Submit\":\"提交\",\"Cancel\":\"取消\",\"Yes\":\"是\",\"No\":\"否\",\"Select an option\":\"选择一个选项\",\"Type your own answer\":\"输入自定义回答\",\"Enter a value\":\"输入值\"};return Object.hasOwn(labels,value)?labels[value]:value})(option.description)}))}))};",
+          "count": 1
+        },
+        {
+          "from": "return\"Disabled \\u25CB\"",
+          "to": "return\"已禁用 ○\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous answer\"",
+          "to": "title:\"上一个回答\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Back to answers\"",
+          "to": "title:\"返回回答列表\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No limits apply to \"",
+          "to": "F(\"以下对象没有用量限制：\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy session ID\"",
+          "to": "title:\"复制会话 ID\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Permission required\"",
+          "to": "F(\"需要授权\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous option\"",
+          "to": "title:\"上一个选项\"",
+          "count": 1
+        },
+        {
+          "from": "\"Type your own answer\"",
+          "to": "\"输入自定义回答\"",
+          "count": 9
+        },
+        {
+          "from": "F(\"No items available\"",
+          "to": "F(\"没有可用项目\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Rename account\"",
+          "to": "title:\"重命名账号\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Rename session\"",
+          "to": "title:\"重命名会话\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Close tab menu\"",
+          "to": "title:\"关闭标签页菜单\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No worktrees found\"",
+          "to": "F(\"未找到工作树\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous image\"",
+          "to": "title:\"上一张图片\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous item\"",
+          "to": "title:\"上一项\"",
+          "count": 1
+        },
+        {
+          "from": "placeholder:\"API key\"",
+          "to": "placeholder:\"API 密钥\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Select answer\"",
+          "to": "title:\"选择回答\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Submit answer\"",
+          "to": "title:\"提交回答\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Confirm alert\"",
+          "to": "title:\"确认提醒\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"\\u2713 copied\"",
+          "to": "title:\"✓ 已复制\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Previous page\"",
+          "to": "title:\"上一页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scroll to top\"",
+          "to": "title:\"滚动到顶部\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Name worktree\"",
+          "to": "title:\"命名工作树\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" again to confirm\"",
+          "to": "F(\" 再按一次确认\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Reject permission\"",
+          "to": "F(\"拒绝授权\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Select option\"",
+          "to": "title:\"选择选项\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Close dialog\"",
+          "to": "title:\"关闭弹窗\"",
+          "count": 2
+        },
+        {
+          "from": "F(\"processing\\u2026\"",
+          "to": "F(\"正在处理…\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next section\"",
+          "to": "title:\"下一组\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No results found\"",
+          "to": "F(\"没有匹配结果\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Open plugins\"",
+          "to": "label:\"打开插件\"",
+          "count": 2
+        },
+        {
+          "from": "text:\"Limit reached\"",
+          "to": "text:\"已达到限额\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Switch model\"",
+          "to": "label:\"切换模型\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy details\"",
+          "to": "title:\"复制详情\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"copy details\"",
+          "to": "title:\"复制详情\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Connected \\u2713\"",
+          "to": "F(\"已连接 ✓\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"No diff provided\"",
+          "to": "F(\"没有差异内容\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Select item\"",
+          "to": "title:\"选择项目\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Add account\"",
+          "to": "title:\"添加账号\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next answer\"",
+          "to": "title:\"下一个回答\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"investigate\"",
+          "to": "title:\"调查\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"MCP servers\"",
+          "to": "title:\"MCP 服务器\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scroll down\"",
+          "to": "title:\"向下滚动\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Open folder\"",
+          "to": "title:\"打开文件夹\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next option\"",
+          "to": "title:\"下一个选项\"",
+          "count": 1
+        },
+        {
+          "from": "\"Untitled session\"",
+          "to": "\"未命名会话\"",
+          "count": 4
+        },
+        {
+          "from": "\"Environment only\"",
+          "to": "\"仅支持环境变量配置\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"First item\"",
+          "to": "title:\"第一项\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"I finished\"",
+          "to": "title:\"我已完成\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"View usage\"",
+          "to": "label:\"查看用量\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"view error\"",
+          "to": "title:\"查看错误\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next image\"",
+          "to": "title:\"下一张图片\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Workspaces\"",
+          "to": "title:\"工作区\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Permission\"",
+          "to": "group:\"权限\"",
+          "count": 3
+        },
+        {
+          "from": "Connect ${t.name}",
+          "to": "连接 ${t.name}",
+          "count": 2
+        },
+        {
+          "from": "title:\"Next item\"",
+          "to": "title:\"下一项\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Page down\"",
+          "to": "title:\"向下翻页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Last item\"",
+          "to": "title:\"最后一项\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"open link\"",
+          "to": "title:\"打开链接\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Loading\\u2026\"",
+          "to": "F(\"正在加载…\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Usage \\u203A \"",
+          "to": "F(\"用量 › \"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Scroll up\"",
+          "to": "title:\"向上滚动\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Next page\"",
+          "to": "title:\"下一页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Worktrees\"",
+          "to": "title:\"工作树\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Copy path\"",
+          "to": "title:\"复制路径\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Continue\"",
+          "to": "title:\"继续\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"previous\"",
+          "to": "title:\"上一个\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Thinking\"",
+          "to": "title:\"思考过程\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Page up\"",
+          "to": "title:\"向上翻页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"confirm\"",
+          "to": "title:\"确认\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Confirm\"",
+          "to": "title:\"确认\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Reference: \"",
+          "to": "F(\"参考：\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"refresh\"",
+          "to": "title:\"刷新\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Dialog\"",
+          "to": "group:\"弹窗\"",
+          "count": 36
+        },
+        {
+          "from": "title:\"submit\"",
+          "to": "title:\"提交\"",
+          "count": 3
+        },
+        {
+          "from": "title:\"rename\"",
+          "to": "title:\"重命名\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"select\"",
+          "to": "title:\"选择\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"cancel\"",
+          "to": "title:\"取消\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Cancel\"",
+          "to": "title:\"取消\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Plugin\"",
+          "to": "title:\"插件\"",
+          "count": 2
+        },
+        {
+          "from": "F(\" remaining\"",
+          "to": "F(\" 剩余\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"scroll\"",
+          "to": "title:\"滚动\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Rename\"",
+          "to": "title:\"重命名\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"delete\"",
+          "to": "title:\"删除\"",
+          "count": 2
+        },
+        {
+          "from": "title:\"Usage\"",
+          "to": "title:\"用量\"",
+          "count": 3
+        },
+        {
+          "from": "F(\" used of \"",
+          "to": "F(\" 已用，总量 \"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Close\"",
+          "to": "title:\"关闭\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Deleting \"",
+          "to": "F(\"正在删除 \"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Worktrees\"",
+          "to": "F(\"工作树\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Back\"",
+          "to": "title:\"返回\"",
+          "count": 3
+        },
+        {
+          "from": "title:\"open\"",
+          "to": "title:\"打开\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"copy\"",
+          "to": "title:\"复制\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Skip\"",
+          "to": "title:\"跳过\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Form\"",
+          "to": "group:\"表单\"",
+          "count": 5
+        },
+        {
+          "from": "title:\"back\"",
+          "to": "title:\"返回\"",
+          "count": 1
+        },
+        {
+          "from": "label:\"Open\"",
+          "to": "label:\"打开\"",
+          "count": 1
+        },
+        {
+          "from": "group:\"Tabs\"",
+          "to": "group:\"标签页\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"move\"",
+          "to": "title:\"移动\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"next\"",
+          "to": "title:\"下一个\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Patterns\"",
+          "to": "F(\"规则模式\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"Yes\"",
+          "to": "title:\"是\"",
+          "count": 2
+        },
+        {
+          "from": "F(\"Resets \"",
+          "to": "F(\"重置时间：\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"new\"",
+          "to": "title:\"新建\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"confirm\"",
+          "to": "F(\"确认\"",
+          "count": 2
+        },
+        {
+          "from": "F(\"Thought\"",
+          "to": "F(\"思考\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"No\"",
+          "to": "title:\"否\"",
+          "count": 2
+        },
+        {
+          "from": "F(\". Skip\"",
+          "to": "F(\"。跳过\"",
+          "count": 1
+        },
+        {
+          "from": "title:\"ok\"",
+          "to": "title:\"确定\"",
+          "count": 2
+        },
+        {
+          "from": "F(\"Limits\"",
+          "to": "F(\"用量限制\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"Press \"",
+          "to": "F(\"按 \"",
+          "count": 1
+        },
+        {
+          "from": "F(\"cancel\"",
+          "to": "F(\"取消\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"select\"",
+          "to": "F(\"选择\"",
+          "count": 1
+        },
+        {
+          "from": "F(\" more\"",
+          "to": "F(\" 项更多\"",
+          "count": 1
+        },
+        {
+          "from": "F(\"ok\"",
+          "to": "F(\"确定\"",
+          "count": 2
+        }
+      ],
+      "chunk-yc9ekmk6.js": [
+        {
+          "from": "\"This will always allow the following patterns for this project.\"",
+          "to": "\"此项目将始终允许匹配以下规则的操作。\"",
+          "count": 1
+        },
+        {
+          "from": "\"This keeps the session running despite repeated failures.\"",
+          "to": "\"即使操作多次失败，也继续运行当前会话。\"",
+          "count": 1
+        },
+        {
+          "from": "This will always allow ${n.action} for this project.",
+          "to": "此项目将始终允许 ${n.action}。",
+          "count": 1
+        },
+        {
+          "from": "title:\"Continue after repeated failures\"",
+          "to": "title:\"多次失败后继续\"",
+          "count": 1
+        },
+        {
+          "from": "Access external directory ${r(h)}",
+          "to": "访问外部目录 ${r(h)}",
+          "count": 1
+        },
+        {
+          "from": "u===\"read\"?\"Read\":\"List\"",
+          "to": "u===\"read\"?\"读取\":\"列出\"",
+          "count": 1
+        },
+        {
+          "from": "u===\"glob\"?\"Glob\":\"Grep\"",
+          "to": "u===\"glob\"?\"匹配文件\":\"搜索文本\"",
+          "count": 1
+        },
+        {
+          "from": "Call tool ${n.action}",
+          "to": "调用工具 ${n.action}",
+          "count": 1
+        },
+        {
+          "from": "title:\"Shell command\"",
+          "to": "title:\"Shell 命令\"",
+          "count": 1
+        },
+        {
+          "from": "return\"Always allow\"",
+          "to": "return\"始终允许\"",
+          "count": 1
+        },
+        {
+          "from": "return\"Allow once\"",
+          "to": "return\"允许一次\"",
+          "count": 1
+        },
+        {
+          "from": "${Tc(p)} Subagent",
+          "to": "${Tc(p)} 子代理",
+          "count": 1
+        },
+        {
+          "from": "return\"Confirm\"",
+          "to": "return\"确认\"",
+          "count": 1
+        },
+        {
+          "from": "return\"Reject\"",
+          "to": "return\"拒绝\"",
+          "count": 1
+        },
+        {
+          "from": "return\"Cancel\"",
+          "to": "return\"取消\"",
+          "count": 1
+        },
+        {
+          "from": "Edit ${r(p)}",
+          "to": "编辑 ${r(p)}",
+          "count": 1
+        }
+      ],
+      "chunk-mabj30d7.js": [
+        {
+          "from": "Must be at least ${t.minLength} characters",
+          "to": "至少输入 ${t.minLength} 个字符",
+          "count": 1
+        },
+        {
+          "from": "Must be at most ${t.maxLength} characters",
+          "to": "最多输入 ${t.maxLength} 个字符",
+          "count": 1
+        },
+        {
+          "from": "Must match pattern: ${t.pattern}",
+          "to": "必须符合格式：${t.pattern}",
+          "count": 1
+        },
+        {
+          "from": "\"Select only available options\"",
+          "to": "\"请选择可用的选项\"",
+          "count": 1
+        },
+        {
+          "from": "\"Expected a date (YYYY-MM-DD)\"",
+          "to": "\"请输入日期（YYYY-MM-DD）\"",
+          "count": 1
+        },
+        {
+          "from": "Invalid pattern: ${t.pattern}",
+          "to": "格式规则无效：${t.pattern}",
+          "count": 1
+        },
+        {
+          "from": "Must be at least ${t.minimum}",
+          "to": "最小值为 ${t.minimum}",
+          "count": 1
+        },
+        {
+          "from": "Select at least ${t.minItems}",
+          "to": "请至少选择 ${t.minItems} 项",
+          "count": 1
+        },
+        {
+          "from": "Must be at most ${t.maximum}",
+          "to": "最大值为 ${t.maximum}",
+          "count": 1
+        },
+        {
+          "from": "Select at most ${t.maxItems}",
+          "to": "请最多选择 ${t.maxItems} 项",
+          "count": 1
+        },
+        {
+          "from": "\"Select at least one option\"",
+          "to": "\"请至少选择一项\"",
+          "count": 1
+        },
+        {
+          "from": "\"Select an available option\"",
+          "to": "\"请选择一个可用选项\"",
+          "count": 1
+        },
+        {
+          "from": "\"Expected an email address\"",
+          "to": "\"请输入电子邮箱地址\"",
+          "count": 1
+        },
+        {
+          "from": "\"Expected a date and time\"",
+          "to": "\"请输入日期和时间\"",
+          "count": 1
+        },
+        {
+          "from": "\"Expected an integer\"",
+          "to": "\"请输入整数\"",
+          "count": 1
+        },
+        {
+          "from": "\"Expected selections\"",
+          "to": "\"请选择选项\"",
+          "count": 1
+        },
+        {
+          "from": "\"Expected yes or no\"",
+          "to": "\"请选择是或否\"",
+          "count": 1
+        },
+        {
+          "from": "\"Expected a number\"",
+          "to": "\"请输入数字\"",
+          "count": 1
+        },
+        {
+          "from": "\"Answer required\"",
+          "to": "\"请填写回答\"",
+          "count": 2
+        },
+        {
+          "from": "\"Expected a URL\"",
+          "to": "\"请输入网址\"",
+          "count": 1
+        },
+        {
+          "from": "\"Expected text\"",
+          "to": "\"请输入文本\"",
+          "count": 1
+        }
+      ]
+    }
+  }
+]

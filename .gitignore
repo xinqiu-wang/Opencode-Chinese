@@ -1,0 +1,9 @@
+node_modules/
+dist/
+artifacts/
+*.log
+*.tmp
+*.zip
+*.tgz
+*.exe
+!OpenCodeZhCNTool.exe
